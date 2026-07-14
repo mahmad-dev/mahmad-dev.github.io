@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="JetBrains Mono, monospace">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0c10"/>
+      <stop offset="100%" stop-color="#12131c"/>
+    </linearGradient>
+    <marker id="arrM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgM)"/>
+
+  <text x="60" y="70" fill="#f3f4f6" font-size="30" font-weight="700">Model Context Protocol Gateway</text>
+  <text x="60" y="100" fill="#6b7280" font-size="16">Giving AI agents safe, direct access to internal APIs</text>
+
+  <!-- AI Agent -->
+  <rect x="60" y="330" width="220" height="120" rx="8" fill="#1a1c23" stroke="#262833"/>
+  <text x="170" y="380" fill="#f3f4f6" font-size="18" text-anchor="middle" font-weight="600">AI Agent</text>
+  <text x="170" y="404" fill="#6b7280" font-size="13" text-anchor="middle">Claude / OpenAI</text>
+
+  <line x1="280" y1="390" x2="380" y2="390" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrM)"/>
+
+  <!-- MCP Server core -->
+  <rect x="390" y="280" width="260" height="220" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
+  <text x="520" y="325" fill="#f3f4f6" font-size="19" text-anchor="middle" font-weight="600">MCP Server</text>
+  <text x="520" y="348" fill="#3b82f6" font-size="13" text-anchor="middle">Central Gateway</text>
+
+  <rect x="415" y="365" width="210" height="45" rx="6" fill="#12131c" stroke="#262833"/>
+  <text x="520" y="393" fill="#9ca3af" font-size="13" text-anchor="middle">Context Orchestration</text>
+
+  <rect x="415" y="420" width="210" height="45" rx="6" fill="#12131c" stroke="#262833"/>
+  <text x="520" y="448" fill="#9ca3af" font-size="13" text-anchor="middle">Rate Limits &amp; Guardrails</text>
+
+  <line x1="650" y1="330" x2="740" y2="330" stroke="#10b981" stroke-width="2" marker-end="url(#arrM)"/>
+  <line x1="650" y1="390" x2="740" y2="390" stroke="#10b981" stroke-width="2" marker-end="url(#arrM)"/>
+  <line x1="650" y1="450" x2="740" y2="450" stroke="#10b981" stroke-width="2" marker-end="url(#arrM)"/>
+
+  <!-- Internal API targets -->
+  <rect x="750" y="290" width="230" height="80" rx="8" fill="#1a1c23" stroke="#262833"/>
+  <text x="865" y="325" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Internal Data API</text>
+  <text x="865" y="347" fill="#6b7280" font-size="12" text-anchor="middle">SQL / Postgres</text>
+
+  <rect x="750" y="350" width="230" height="80" rx="8" fill="#1a1c23" stroke="#262833"/>
+  <text x="865" y="385" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Search API</text>
+  <text x="865" y="407" fill="#6b7280" font-size="12" text-anchor="middle">Vector DB / Full-text</text>
+
+  <rect x="750" y="410" width="230" height="80" rx="8" fill="#1a1c23" stroke="#262833"/>
+  <text x="865" y="445" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">External Web API</text>
+  <text x="865" y="467" fill="#6b7280" font-size="12" text-anchor="middle">real-time services</text>
+
+  <text x="60" y="600" fill="#6b7280" font-size="13">Node.js &#183; TypeScript &#183; MCP SDK &#183; Express.js &#183; PostgreSQL</text>
+  <text x="60" y="625" fill="#3b82f6" font-size="14" font-weight="600">Developer lookup effort cut by ~30%</text>
+</svg>
