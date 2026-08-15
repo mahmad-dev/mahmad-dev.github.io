@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RAG Knowledge Base · Muhammad Ahmad</title>
-  <meta name="description" content="Retrieval over internal wikis, PRDs and code so engineers can ask architecture questions in plain English and get a sourced answer.">
+  <title>High-Scale Property CRM Engine · Muhammad Ahmad</title>
+  <meta name="description" content="The production backend behind Propforce, Zameen.com and Bayut.sa. 40M+ monthly users, 45% lower query latency, an end-to-end mortgage flow used by 5,000+ clients.">
   <meta name="theme-color" content="#08090c">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="RAG Knowledge Base · Muhammad Ahmad">
-  <meta property="og:description" content="Retrieval over internal wikis, PRDs and code so engineers can ask architecture questions in plain English and get a sourced answer.">
-  <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/portfolio/portfolio-rag.svg">
+  <meta property="og:title" content="High-Scale Property CRM Engine · Muhammad Ahmad">
+  <meta property="og:description" content="The production backend behind Propforce, Zameen.com and Bayut.sa. 40M+ monthly users, 45% lower query latency, an end-to-end mortgage flow used by 5,000+ clients.">
+  <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/portfolio/portfolio-crm.svg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -62,12 +62,12 @@
     <section class="page-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb">
-          <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>RAG Knowledge Base</span>
+          <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>High-Scale Property CRM Engine</span>
         </nav>
-        <span class="eyebrow">AI &amp; Automation</span>
-        <h1>RAG Knowledge Base</h1>
-        <p class="lede">A retrieval-augmented generation indexer and search layer running over internal engineering wikis, product requirement documents and core code repositories.</p>
-        <p class="project-metric">Onboarding answers without pulling in senior engineers</p>
+        <span class="eyebrow">Backend Systems</span>
+        <h1>High-Scale Property CRM Engine</h1>
+        <p class="lede">Core production backend infrastructure behind Propforce, Zameen.com and Bayut.sa: DubizzleLabs' real-estate transaction CRM, serving over 40 million monthly users.</p>
+        <p class="project-metric">40M+ MAU · 45% lower query latency · 5,000+ mortgage clients</p>
       </div>
     </section>
 
@@ -76,26 +76,26 @@
         <div class="detail-grid">
           <div>
             <figure class="detail-figure">
-              <img src="assets/img/portfolio/portfolio-rag.svg" alt="Architecture diagram of the retrieval-augmented generation knowledge base">
+              <img src="assets/img/portfolio/portfolio-crm.svg" alt="Architecture diagram of the property CRM backend">
             </figure>
             <div class="detail-body">
-<h2>The problem</h2>
-<p>The reasoning behind a system rarely lives in the code. It sits in wikis, PRDs, and the heads of the three people who were
-in the room. New engineers burned days finding out why something was built a particular way, and the people who knew were
-the ones being interrupted.</p>
+<h2>The system</h2>
+<p>A real-estate transaction CRM is deceptively heavy: high write volume, long-lived records with strict audit requirements,
+and read paths that fan out across listings, agents and clients. At 40M+ monthly users, the cost of a bad query plan is not
+theoretical. It is the difference between a page that loads and one that times out.</p>
 
-<h2>How it works</h2>
+<h2>What I built</h2>
 <ul>
-  <li>Automated markdown parsing and ingestion pipelines over wikis, PRDs and repositories, re-run as sources change.</li>
-  <li>Vector embeddings generated through the OpenAI API, retrieved by cosine similarity.</li>
-  <li>Fast semantic lookup against a vector index (Pinecone/Chroma) tuned for the corpus size.</li>
-  <li>A contextual prompt-assembly layer that returns architectural references and onboarding answers <strong>with their sources attached</strong>, so answers can be checked.</li>
+  <li>Scalable backend services and REST APIs in Node.js, TypeScript and NestJS across the transaction domain.</li>
+  <li>An <strong>end-to-end mortgage feature adopted by 5,000+ active clients</strong>, covering application through approval.</li>
+  <li>RBAC-based logging and observability: metrics and tracing across every critical CRUD path, so failures were attributable.</li>
+  <li>Parallel cron jobs and background workers that moved slow work off the request path and raised sustained throughput.</li>
 </ul>
 
-<h2>What changed</h2>
-<p>Onboarding lookups moved from "ask a senior engineer" to "ask the knowledge base and verify the citation." Keeping source
-attribution in every answer mattered more than raw retrieval quality. An unsourced answer about your own architecture is
-not something a team will act on.</p>
+<h2>Performance work</h2>
+<p>The latency win came from unglamorous places: reshaping MySQL and PostgreSQL schemas around actual access patterns,
+adding the indexes the query planner was missing, and removing N+1 fan-out in the hot read paths. Core query latency fell
+<strong>45%</strong>, which bought the platform headroom to keep growing on the same infrastructure.</p>
             </div>
             <p style="margin-top:40px">
               <a class="btn btn-ghost" href="index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to all work</a>
@@ -105,11 +105,11 @@ not something a team will act on.</p>
 
           <aside class="detail-aside">
             <h3>Project information</h3>
-            <div class="aside-row"><span class="k">Category</span><span class="v">RAG &amp; NLP Systems</span></div>
+            <div class="aside-row"><span class="k">Category</span><span class="v">Backend Systems</span></div>
             <div class="aside-row"><span class="k">Company</span><span class="v">DubizzleLabs</span></div>
-            <div class="aside-row"><span class="k">Role</span><span class="v">Design &amp; implementation</span></div>
-            <div class="aside-row"><span class="k">Timeline</span><span class="v">2025 &ndash; 2026</span></div>
-            <div class="aside-row"><span class="k">Stack</span><span class="v">Python, Node.js, LangChain, Pinecone, OpenAI Embeddings</span></div>
+            <div class="aside-row"><span class="k">Role</span><span class="v">Senior Software Engineer, Backend</span></div>
+            <div class="aside-row"><span class="k">Timeline</span><span class="v">Jul 2023 &ndash; Jul 2026</span></div>
+            <div class="aside-row"><span class="k">Stack</span><span class="v">Node.js, TypeScript, NestJS, MySQL, PostgreSQL, Redis, AWS</span></div>
             <a class="btn btn-primary" style="width:100%;margin-top:20px" href="mailto:ahmad.arshad7869@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg> Ask me about it</a>
           </aside>
         </div>

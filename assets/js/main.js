@@ -157,11 +157,11 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
+    let portfolioContainers = select('.portfolio-container', true);
+    if (portfolioContainers.length) {
+      let portfolioIsotopes = portfolioContainers.map((container) => new Isotope(container, {
         itemSelector: '.portfolio-item'
-      });
+      }));
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
@@ -172,11 +172,14 @@
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
+        let filterValue = this.getAttribute('data-filter');
+        portfolioIsotopes.forEach((portfolioIsotope) => {
+          portfolioIsotope.arrange({
+            filter: filterValue
+          });
+          portfolioIsotope.once('arrangeComplete', function() {
+            AOS.refresh()
+          });
         });
       }, true);
     }
@@ -188,52 +191,6 @@
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
   });
 
   /**

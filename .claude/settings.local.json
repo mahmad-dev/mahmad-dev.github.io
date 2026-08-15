@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Apify__get-dataset-items",
+      "Bash(mkdir -p /private/tmp/claude-502/-Users-Ahmad-Documents-Github-Projects-mahmad-dev-github-io/91a6f90d-4c31-45d0-a42a-7bcdab0394da/scratchpad/pw)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(find /Users/Ahmad -maxdepth 6 -iname \"me.png\" -o -iname \"me.jpg\" 2>/dev/null | grep -v node_modules; echo \"---broader recent check---\"; find /Users/Ahmad -maxdepth 6 \\\\\\( -iname \"*.jpg\" -o -iname \"*.jpeg\" -o -iname \"*.png\" -o -iname \"*.heic\" -o -iname \"*.webp\" \\\\\\) -newermt \"2026-08-08 09:00\" 2>/dev/null | grep -v \"node_modules\\\\|Library/Caches\\\\|\\\\.git/\\\\|\\\\.vscode/extensions\")",
+      "Read(//Users/Ahmad/**)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/Ahmad/Desktop/me.PNG\")",
+      "Bash(sips -s format jpeg -s formatOptions 88 \"/Users/Ahmad/Desktop/me.PNG\" --out assets/img/frankfurt.jpg)",
+      "WebFetch(domain:brittanychiang.com)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

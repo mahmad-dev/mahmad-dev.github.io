@@ -1,123 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ahmad's Portfolio | Model Context Protocol Gateway</title>
-  <meta content="Integration of internal microservice APIs with LLM Agents using Model Context Protocol." name="description">
+  <title>Model Context Protocol Gateway · Muhammad Ahmad</title>
+  <meta name="description" content="A custom MCP gateway exposing internal microservice APIs to LLM agents as typed, permissioned tools, cutting manual developer lookups by ~30%.">
+  <meta name="theme-color" content="#08090c">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-  <link href="assets/img/favicon.png" rel="icon" sizes="any">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Model Context Protocol Gateway · Muhammad Ahmad">
+  <meta property="og:description" content="A custom MCP gateway exposing internal microservice APIs to LLM agents as typed, permissioned tools, cutting manual developer lookups by ~30%.">
+  <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/portfolio/portfolio-mcp.svg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" sizes="any" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 
-<body class="details-page">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ======= Header (Top Navbar) ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html"><img src="assets/img/favicon.svg" alt="Ahmad's Portfolio" class="logo-avatar"> Ahmad's Portfolio</a></h1>
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="index.html#hero" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="index.html#about" class="nav-link"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="index.html#skills" class="nav-link"><i class="bx bx-brain"></i> <span>Tech Stack</span></a></li>
-          <li><a href="index.html#resume" class="nav-link"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="index.html#portfolio" class="nav-link active"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-          <li><a href="index.html#testimonials" class="nav-link"><i class="bx bx-comment-detail"></i> <span>Testimonials</span></a></li>
-          <li><a href="index.html#contact" class="nav-link"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">MA</span>
+        <span>Muhammad Ahmad <span class="brand-sub">· Full-Stack &amp; AI</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="index.html#work" class="active">Work</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost btn-sm header-cta" href="assets/Muhammad_Ahmad_Resume.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> CV</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      </div>
     </div>
   </header>
 
-  <main id="main" style="padding-top: 100px;">
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs section-bg">
+  <main id="main">
+    <section class="page-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Model Context Protocol (MCP) Gateway</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Project Details</li>
-          </ol>
-        </div>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>Model Context Protocol Gateway</span>
+        </nav>
+        <span class="eyebrow">AI &amp; Automation</span>
+        <h1>Model Context Protocol Gateway</h1>
+        <p class="lede">A custom Model Context Protocol gateway connecting autonomous AI agents directly to internal microservice APIs, with schema generation, guardrails and full invocation logging.</p>
+        <p class="project-metric">~30% fewer manual developer lookups</p>
       </div>
     </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section>
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <img src="assets/img/portfolio/portfolio-mcp.svg" class="img-fluid rounded border" style="border-color: var(--border-color) !important; background: var(--bg-card);" alt="MCP Gateway Architecture Diagram">
+        <div class="detail-grid">
+          <div>
+            <figure class="detail-figure">
+              <img src="assets/img/portfolio/portfolio-mcp.svg" alt="Architecture diagram of the Model Context Protocol gateway">
+            </figure>
+            <div class="detail-body">
+<h2>The problem</h2>
+<p>Agents are only as useful as the data they can reach. Without a safe path to internal services, every question an agent
+could not answer became a developer interrupt: someone digging through a service, running a query, and pasting the result
+back. The obvious shortcut, giving an agent raw database access, is not something you ship to production.</p>
+
+<h2>How it works</h2>
+<ul>
+  <li>A secure endpoint proxy that maps internal APIs to <strong>typed MCP tools</strong> an LLM orchestrator can call.</li>
+  <li>Dynamic schema generation, exposing database structure to agents in a shape that is safe to read and impossible to over-reach.</li>
+  <li>Rate limiting and guardrails keeping agent activity inside valid operational bounds, per tool and per caller.</li>
+  <li>Invocation logging and monitoring, so every agent action is attributable and reviewable after the fact.</li>
+</ul>
+
+<h2>What changed</h2>
+<p>Manual developer lookups and the context-switching around them fell by roughly <strong>30%</strong>. The bigger structural
+win was making agent access a reviewable surface: adding a capability became a deliberate act of exposing one more typed
+tool, rather than widening a blanket permission.</p>
+            </div>
+            <p style="margin-top:40px">
+              <a class="btn btn-ghost" href="index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to all work</a>
+              
+            </p>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; padding: 30px;">
-              <h3>Project Information</h3>
-              <ul style="list-style: none; padding: 0;">
-                <li class="mb-2"><strong>Category</strong>: AI Architectures</li>
-                <li class="mb-2"><strong>Company</strong>: DubizzleLabs</li>
-                <li class="mb-2"><strong>Timeline</strong>: July 2023 - July 2026</li>
-                <li class="mb-2"><strong>Tech Stack</strong>: Node.js, TypeScript, MCP SDK, Express.js, PostgreSQL, Docker</li>
-              </ul>
-            </div>
-            <div class="portfolio-description mt-4">
-              <h2>Overview</h2>
-              <p>
-                Designed and built a custom Model Context Protocol (MCP) gateway layer connecting autonomous AI agents directly to internal microservice APIs.
-              </p>
-              <h3 class="h6 mt-3 font-weight-bold" style="color: var(--primary-color);">Key Features:</h3>
-              <ul class="text-secondary pl-3">
-                <li>Secure API endpoint proxy mapping for tool use by LLM orchestrators.</li>
-                <li>Dynamic schema generation exposing database structures to agents safely.</li>
-                <li>Rate-limiting and guardrails ensuring agents stay within valid operation bounds.</li>
-                <li>Self-service tool invocation logging and monitoring dashboards.</li>
-              </ul>
-              <h3 class="h6 mt-3 font-weight-bold" style="color: var(--accent-color);">Production Impact:</h3>
-              <p>
-                Reduced manual developer lookups and context-switching overhead by ~30% through automated query-resolving agents.
-              </p>
-            </div>
-          </div>
+          <aside class="detail-aside">
+            <h3>Project information</h3>
+            <div class="aside-row"><span class="k">Category</span><span class="v">AI Infrastructure</span></div>
+            <div class="aside-row"><span class="k">Company</span><span class="v">DubizzleLabs</span></div>
+            <div class="aside-row"><span class="k">Role</span><span class="v">Architecture &amp; build</span></div>
+            <div class="aside-row"><span class="k">Timeline</span><span class="v">2025 &ndash; 2026</span></div>
+            <div class="aside-row"><span class="k">Stack</span><span class="v">Node.js, TypeScript, MCP SDK, Express, PostgreSQL, Docker</span></div>
+            <a class="btn btn-primary" style="width:100%;margin-top:20px" href="mailto:ahmad.arshad7869@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg> Ask me about it</a>
+          </aside>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="footer">
-    <div class="container text-center py-4">
-      <div class="copyright text-muted mb-2" style="font-size: 14px;">
-        &copy; 2026 <strong>Muhammad Ahmad</strong>. All rights reserved.
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Muhammad Ahmad · Full-Stack Engineer &amp; AI Systems · Ilmenau, Germany</p>
+      <div class="footer-links">
+        <a class="icon-btn" href="https://www.linkedin.com/in/mahmad12/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"/></svg></a>
+        <a class="icon-btn" href="https://github.com/mahmad-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+        <a class="icon-btn" href="mailto:ahmad.arshad7869@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a class="icon-btn to-top" href="#" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>
