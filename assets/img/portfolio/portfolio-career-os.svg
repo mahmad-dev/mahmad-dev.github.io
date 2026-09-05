@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="JetBrains Mono, monospace">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0c10"/>
+      <stop offset="100%" stop-color="#12131c"/>
+    </linearGradient>
+    <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgC)"/>
+
+  <text x="60" y="70" fill="#f3f4f6" font-size="30" font-weight="700">Career OS</text>
+  <text x="60" y="100" fill="#6b7280" font-size="16">Three career tracks, one evidence-backed profile</text>
+
+  <!-- Profile -->
+  <rect x="60" y="340" width="210" height="120" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
+  <text x="165" y="388" fill="#f3f4f6" font-size="17" text-anchor="middle" font-weight="600">Candidate Profile</text>
+  <text x="165" y="410" fill="#3b82f6" font-size="12" text-anchor="middle">evidence-anchored</text>
+  <text x="165" y="430" fill="#6b7280" font-size="11" text-anchor="middle">no claim without a source</text>
+
+  <line x1="270" y1="360" x2="360" y2="270" stroke="#10b981" stroke-width="2" marker-end="url(#arrC)"/>
+  <line x1="270" y1="400" x2="360" y2="400" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrC)"/>
+  <line x1="270" y1="440" x2="360" y2="530" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrC)"/>
+
+  <!-- Three tracks -->
+  <rect x="370" y="205" width="230" height="90" rx="8" fill="#1a1c23" stroke="#10b981"/>
+  <text x="485" y="240" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Germany · Full-time</text>
+  <text x="485" y="262" fill="#10b981" font-size="12" text-anchor="middle">Blue Card floor checked live</text>
+  <text x="485" y="280" fill="#6b7280" font-size="11" text-anchor="middle">Bundesagentur + employer ATS boards</text>
+
+  <rect x="370" y="355" width="230" height="90" rx="8" fill="#1a1c23" stroke="#f59e0b"/>
+  <text x="485" y="390" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Elite · FAANG entry</text>
+  <text x="485" y="412" fill="#f59e0b" font-size="12" text-anchor="middle">11-dimension readiness score</text>
+  <text x="485" y="430" fill="#6b7280" font-size="11" text-anchor="middle">realistic entry door, not just prestige</text>
+
+  <rect x="370" y="490" width="230" height="90" rx="8" fill="#1a1c23" stroke="#a78bfa"/>
+  <text x="485" y="525" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Mobility · EU funding</text>
+  <text x="485" y="547" fill="#a78bfa" font-size="12" text-anchor="middle">tracked to reimbursement</text>
+  <text x="485" y="565" fill="#6b7280" font-size="11" text-anchor="middle">not just acceptance</text>
+
+  <line x1="600" y1="250" x2="700" y2="340" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+  <line x1="600" y1="400" x2="700" y2="390" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+  <line x1="600" y1="535" x2="700" y2="440" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+
+  <!-- Scorer + next action -->
+  <rect x="710" y="300" width="230" height="180" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
+  <text x="825" y="335" fill="#f3f4f6" font-size="17" text-anchor="middle" font-weight="600">Deterministic Scorer</text>
+  <text x="825" y="357" fill="#3b82f6" font-size="12" text-anchor="middle">11 weighted, visible factors</text>
+
+  <rect x="735" y="375" width="180" height="40" rx="6" fill="#12131c" stroke="#262833"/>
+  <text x="825" y="400" fill="#9ca3af" font-size="12" text-anchor="middle">Caps, never subtracts</text>
+
+  <rect x="735" y="425" width="180" height="40" rx="6" fill="#12131c" stroke="#262833"/>
+  <text x="825" y="450" fill="#9ca3af" font-size="12" text-anchor="middle">One next action, surfaced daily</text>
+
+  <line x1="940" y1="390" x2="1000" y2="390" stroke="#10b981" stroke-width="2" marker-end="url(#arrC)"/>
+
+  <rect x="1010" y="345" width="140" height="90" rx="8" fill="#1a1c23" stroke="#10b981"/>
+  <text x="1080" y="380" fill="#f3f4f6" font-size="14" text-anchor="middle" font-weight="600">Today</text>
+  <text x="1080" y="400" fill="#10b981" font-size="11" text-anchor="middle">the one screen</text>
+  <text x="1080" y="418" fill="#6b7280" font-size="10" text-anchor="middle">you open</text>
+
+  <!-- LLM router, secondary path -->
+  <line x1="825" y1="300" x2="825" y2="230" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrC)"/>
+  <rect x="710" y="150" width="230" height="70" rx="8" fill="#12131c" stroke="#262833" stroke-dasharray="4,3"/>
+  <text x="825" y="180" fill="#9ca3af" font-size="13" text-anchor="middle" font-weight="600">LLM Router (optional)</text>
+  <text x="825" y="200" fill="#6b7280" font-size="11" text-anchor="middle">6-provider failover · fabrication-guarded</text>
+
+  <text x="60" y="640" fill="#6b7280" font-size="13">Next.js 16 &#183; Server Actions &#183; Drizzle/Postgres &#183; TypeScript strict</text>
+  <text x="60" y="665" fill="#3b82f6" font-size="14" font-weight="600">645+ tests &#183; a claim the model can't back with evidence is withheld, not shown</text>
+</svg>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Career OS · Muhammad Ahmad</title>
+  <meta name="description" content="A career operations console running three simultaneous job-search tracks — Germany full-time, elite entry, EU mobility — from one evidence-backed profile, with a deterministic 11-factor scorer and a fabrication-guarded AI second opinion.">
+  <meta name="theme-color" content="#08090c">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Career OS · Muhammad Ahmad">
+  <meta property="og:description" content="Three simultaneous job-search tracks scored from one evidence-backed profile — deterministic scoring, a live Blue Card verdict engine, and an AI second opinion that withholds anything it can't back with evidence.">
+  <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/portfolio/portfolio-career-os.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" sizes="any" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">MA</span>
+        <span>Muhammad Ahmad <span class="brand-sub">· Full-Stack &amp; AI</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="index.html#work" class="active">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost btn-sm header-cta" href="assets/Muhammad_Ahmad_Resume.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> CV</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>Career OS</span>
+        </nav>
+        <span class="eyebrow">AI &amp; Automation</span>
+        <h1>Career OS</h1>
+        <p class="lede">A personal career-operations console that runs three simultaneous job-search tracks — a full-time role in Germany, an elite/FAANG entry point, and EU-funded mobility — from one evidence-backed profile, and reduces each day to a single next action instead of a feed to scroll.</p>
+        <p class="project-metric">Three tracks, one profile, one decision a day — built and used for my own Blue Card search</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="detail-grid">
+          <div>
+            <figure class="detail-figure">
+              <img src="assets/img/portfolio/portfolio-career-os.svg" alt="Architecture diagram of Career OS: one candidate profile feeding three scored career tracks into a single daily next action">
+            </figure>
+            <div class="detail-body">
+<h2>The problem</h2>
+<p>Running three job searches at once means three different kinds of homework: is this salary actually above the EU Blue
+Card threshold this month, is this "internship" one of the handful of realistic doors into an elite employer, is this
+funded program going to reimburse me or just leave me holding the receipt. None of that fits in a spreadsheet you keep
+up to date at 11pm. I built the tool I actually needed to run my own search without dropping any of the three balls.</p>
+
+<h2>How it works</h2>
+<ul>
+  <li><strong>A deterministic, fully-visible scorer</strong> &mdash; eleven weighted factors (technical fit, immigration
+  viability, seniority, application-route quality, freshness, and more) combine into one 0&ndash;100 score with every
+  factor shown, never a black-box number. Disqualifying facts <strong>cap</strong> the score rather than silently
+  averaging it down, so the reason a role scored low stays legible.</li>
+  <li><strong>A five-layer discovery pipeline</strong>, base layer first: the official Bundesagentur f&uuml;r Arbeit API,
+  then employer ATS boards fingerprinted from every posting's own company link &mdash; a company graph that compounds,
+  since each run's postings surface next run's known employer boards &mdash; then aggregator APIs (Arbeitnow, RemoteOK,
+  The Muse, even Hacker News's "Who is hiring?" thread). Sources whose terms of service prohibit automated retrieval
+  (StepStone, XING, Indeed) are <strong>not scraped</strong>, on principle &mdash; excluded by design, with a generated
+  deep-link instead.</li>
+  <li><strong>A live Blue Card verdict engine</strong> that computes the &sect;16b&rarr;&sect;18g salary-transition math
+  against the actual current threshold for every Germany-track opportunity, not a hardcoded constant that goes stale.</li>
+  <li><strong>An optional LLM second opinion, gated by a fabrication guard</strong> &mdash; a six-provider router (Groq,
+  Cerebras, GitHub Models, OpenRouter, Gemini, Ollama) with automatic failover can produce a "should I apply?" verdict
+  and suggest CV language, but every suggested claim is checked against the candidate's own recorded evidence first. A
+  claim the model invents is <strong>withheld</strong>, with the specific violation shown &mdash; never silently
+  smoothed over into something that sounds plausible.</li>
+  <li><strong>Custom auth</strong> built rather than bolted on: Argon2id passphrase hashing, optional TOTP, and a JWT
+  session that re-checks an <code>epoch</code> column against the database on every request &mdash; the one thing that
+  makes "log out everywhere" actually invalidate outstanding sessions instead of just deleting one cookie.</li>
+</ul>
+
+<h2>What changed</h2>
+<p>The daily view collapses three parallel, high-stakes searches into one primary action, with everything else
+deliberately suppressed rather than listed &mdash; removing <em>what should I work on</em> as a decision every morning,
+not just organizing the list of options. 645+ tests back the scoring and pipeline logic; every page is server-rendered
+with Next.js 16 Server Actions as the only write path, so there is no separate REST layer to keep in sync with the UI.</p>
+            </div>
+            <p style="margin-top:40px">
+              <a class="btn btn-ghost" href="index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to all work</a>
+            </p>
+          </div>
+
+          <aside class="detail-aside">
+            <h3>Project information</h3>
+            <div class="aside-row"><span class="k">Category</span><span class="v">AI &amp; Full-Stack Systems</span></div>
+            <div class="aside-row"><span class="k">Type</span><span class="v">Personal project, MIT-licensed</span></div>
+            <div class="aside-row"><span class="k">Role</span><span class="v">Solo design, build &amp; deployment</span></div>
+            <div class="aside-row"><span class="k">Timeline</span><span class="v">2026</span></div>
+            <div class="aside-row"><span class="k">Stack</span><span class="v">Next.js 16, React 19, TypeScript, Drizzle ORM, PostgreSQL (Neon), Tailwind CSS 4, Zod, Vitest</span></div>
+            <a class="btn btn-primary" style="width:100%;margin-top:20px" href="https://germany-career-os.vercel.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg> View live demo</a>
+            <a class="btn btn-ghost" style="width:100%;margin-top:10px" href="https://github.com/mahmad-dev/germany-career-os" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> View on GitHub</a>
+            <a class="btn btn-ghost" style="width:100%;margin-top:10px" href="mailto:ahmad.arshad7869@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg> Ask me about it</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Muhammad Ahmad · Full-Stack Engineer &amp; AI Systems · Ilmenau, Germany</p>
+      <div class="footer-links">
+        <a class="icon-btn" href="https://www.linkedin.com/in/mahmad12/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"/></svg></a>
+        <a class="icon-btn" href="https://github.com/mahmad-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+        <a class="icon-btn" href="mailto:ahmad.arshad7869@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="icon-btn to-top" href="#" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></a>
+
+  <script src="assets/js/site.js"></script>
+</body>
+
+</html>
