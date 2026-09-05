@@ -136,6 +136,29 @@
     });
   }
 
+  /* ---- Project card tilt + cursor spotlight ---- */
+  var fineHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (fineHover && !reducedMotion && cards.length) {
+    cards.forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width;
+        var py = (e.clientY - r.top) / r.height;
+        var rx = (0.5 - py) * 6;
+        var ry = (px - 0.5) * 6;
+        card.classList.add('is-tilting');
+        card.style.setProperty('--mx', (px * 100) + '%');
+        card.style.setProperty('--my', (py * 100) + '%');
+        card.style.transform = 'perspective(1000px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-6px)';
+      });
+      card.addEventListener('mouseleave', function () {
+        card.classList.remove('is-tilting');
+        card.style.transform = '';
+      });
+    });
+  }
+
   /* ---- Footer year ---- */
   var yr = $('[data-year]');
   if (yr) yr.textContent = new Date().getFullYear();

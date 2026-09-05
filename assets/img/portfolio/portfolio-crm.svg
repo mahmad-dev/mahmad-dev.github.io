@@ -1,69 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="JetBrains Mono, monospace">
   <defs>
-    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="crmBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0c10"/>
       <stop offset="100%" stop-color="#12131c"/>
     </linearGradient>
-    <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#3b82f6"/>
-    </marker>
   </defs>
 
-  <rect width="1200" height="800" fill="url(#bgC)"/>
+  <rect width="1200" height="800" fill="url(#crmBg)"/>
 
-  <text x="60" y="70" fill="#f3f4f6" font-size="30" font-weight="700">High-Scale Property CRM Engine</text>
-  <text x="60" y="100" fill="#6b7280" font-size="16">Production backend infrastructure serving 40M+ monthly users</text>
+  <!-- chrome -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0d0f15"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#20232e" stroke-width="1"/>
+  <circle cx="34" cy="32" r="6" fill="#2a2d38"/>
+  <circle cx="56" cy="32" r="6" fill="#2a2d38"/>
+  <circle cx="78" cy="32" r="6" fill="#2a2d38"/>
+  <rect x="112" y="19" width="190" height="26" rx="13" fill="#161a24"/>
+  <text x="207" y="36" fill="#7b8394" font-size="12" text-anchor="middle">propforce · admin</text>
 
-  <!-- Clients -->
-  <rect x="60" y="150" width="230" height="90" rx="8" fill="#1a1c23" stroke="#262833"/>
-  <text x="175" y="188" fill="#f3f4f6" font-size="16" text-anchor="middle" font-weight="600">Web &amp; Mobile Clients</text>
-  <text x="175" y="210" fill="#6b7280" font-size="12" text-anchor="middle">Zameen.com &#183; Propforce &#183; Bayut.sa</text>
+  <!-- ghost monogram -->
+  <text x="1180" y="760" fill="#ffffff" opacity="0.045" font-size="320" font-weight="700" text-anchor="end" letter-spacing="-10">CRM</text>
 
-  <line x1="290" y1="195" x2="380" y2="195" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+  <!-- sidebar -->
+  <rect x="0" y="64" width="196" height="736" fill="#0d0f15"/>
+  <line x1="196" y1="64" x2="196" y2="800" stroke="#20232e"/>
+  <g font-size="13" fill="#6b7285">
+    <rect x="16" y="100" width="164" height="36" rx="8" fill="rgba(34,211,238,0.1)"/>
+    <text x="34" y="123" fill="#22d3ee">Listings</text>
+    <text x="34" y="171">Mortgages</text>
+    <text x="34" y="219">Workers</text>
+    <text x="34" y="267">Reporting</text>
+    <text x="34" y="315">Settings</text>
+  </g>
 
-  <!-- API Gateway -->
-  <rect x="390" y="150" width="230" height="90" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
-  <text x="505" y="188" fill="#f3f4f6" font-size="16" text-anchor="middle" font-weight="600">API Gateway</text>
-  <text x="505" y="210" fill="#3b82f6" font-size="12" text-anchor="middle">NestJS &#183; TypeScript</text>
+  <!-- stat tiles -->
+  <g font-family="Arial, sans-serif">
+    <rect x="228" y="100" width="304" height="120" rx="12" fill="#11141c" stroke="#20232e"/>
+    <text x="252" y="150" fill="#f59e0b" font-size="34" font-weight="700">40M+</text>
+    <text x="252" y="180" fill="#6b7285" font-size="12.5" font-family="JetBrains Mono, monospace">monthly users served</text>
 
-  <!-- branch to core services -->
-  <line x1="505" y1="240" x2="505" y2="290" stroke="#262833" stroke-width="2"/>
-  <line x1="290" y1="290" x2="720" y2="290" stroke="#262833" stroke-width="2"/>
-  <line x1="290" y1="290" x2="290" y2="330" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="505" y1="290" x2="505" y2="330" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="720" y1="290" x2="720" y2="330" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+    <rect x="548" y="100" width="304" height="120" rx="12" fill="#11141c" stroke="#20232e"/>
+    <text x="572" y="150" fill="#34d399" font-size="34" font-weight="700">-45%</text>
+    <text x="572" y="180" fill="#6b7285" font-size="12.5" font-family="JetBrains Mono, monospace">core query latency</text>
 
-  <!-- Core services row -->
-  <rect x="175" y="340" width="230" height="90" rx="8" fill="#1a1c23" stroke="#262833"/>
-  <text x="290" y="378" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Core CRM Services</text>
-  <text x="290" y="400" fill="#6b7280" font-size="12" text-anchor="middle">listings, transactions</text>
+    <rect x="868" y="100" width="304" height="120" rx="12" fill="#11141c" stroke="#20232e"/>
+    <text x="892" y="150" fill="#22d3ee" font-size="34" font-weight="700">5,000+</text>
+    <text x="892" y="180" fill="#6b7285" font-size="12.5" font-family="JetBrains Mono, monospace">active mortgage clients</text>
+  </g>
 
-  <rect x="390" y="340" width="230" height="90" rx="8" fill="#1a1c23" stroke="#10b981"/>
-  <text x="505" y="378" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Mortgage Engine</text>
-  <text x="505" y="400" fill="#10b981" font-size="12" text-anchor="middle">5,000+ active clients</text>
+  <!-- table -->
+  <rect x="228" y="248" width="944" height="488" rx="12" fill="#11141c" stroke="#20232e"/>
+  <text x="252" y="284" fill="#6b7285" font-size="12" letter-spacing="1.2">LISTINGS · Zameen.com · Bayut.sa</text>
+  <line x1="228" y1="300" x2="1172" y2="300" stroke="#20232e"/>
 
-  <rect x="605" y="340" width="230" height="90" rx="8" fill="#1a1c23" stroke="#262833"/>
-  <text x="720" y="378" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Background Workers</text>
-  <text x="720" y="400" fill="#6b7280" font-size="12" text-anchor="middle">parallel cron jobs</text>
+  <g font-size="13" fill="#c7cbd6">
+    <text x="252" y="330" fill="#6b7285" font-size="11">PROPERTY</text>
+    <text x="620" y="330" fill="#6b7285" font-size="11">CITY</text>
+    <text x="820" y="330" fill="#6b7285" font-size="11">PRICE</text>
+    <text x="1000" y="330" fill="#6b7285" font-size="11">STATUS</text>
 
-  <!-- down to data layer -->
-  <line x1="290" y1="430" x2="290" y2="480" stroke="#262833" stroke-width="2"/>
-  <line x1="505" y1="430" x2="505" y2="480" stroke="#262833" stroke-width="2"/>
-  <line x1="720" y1="430" x2="720" y2="480" stroke="#262833" stroke-width="2"/>
-  <line x1="290" y1="480" x2="720" y2="480" stroke="#262833" stroke-width="2"/>
-  <line x1="505" y1="480" x2="505" y2="520" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+    <line x1="228" y1="346" x2="1172" y2="346" stroke="#1a1c23"/>
+    <text x="252" y="374">3-bed apartment, DHA Phase 6</text>
+    <text x="620" y="374">Lahore</text>
+    <text x="820" y="374">PKR 2.4cr</text>
+    <rect x="1000" y="358" width="86" height="24" rx="12" fill="rgba(52,211,153,0.14)"/><text x="1015" y="374" fill="#34d399" font-size="11">ACTIVE</text>
 
-  <!-- Data layer -->
-  <rect x="330" y="530" width="210" height="90" rx="8" fill="#1a1c23" stroke="#f59e0b"/>
-  <text x="435" y="568" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">MySQL / PostgreSQL</text>
-  <text x="435" y="590" fill="#f59e0b" font-size="12" text-anchor="middle">optimized schemas &amp; indexes</text>
+    <line x1="228" y1="396" x2="1172" y2="396" stroke="#1a1c23"/>
+    <text x="252" y="424">Villa, Al Barari</text>
+    <text x="620" y="424">Dubai</text>
+    <text x="820" y="424">AED 6.1M</text>
+    <rect x="1000" y="408" width="86" height="24" rx="12" fill="rgba(52,211,153,0.14)"/><text x="1015" y="424" fill="#34d399" font-size="11">ACTIVE</text>
 
-  <rect x="565" y="530" width="200" height="90" rx="8" fill="#1a1c23" stroke="#262833"/>
-  <text x="665" y="568" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Redis</text>
-  <text x="665" y="590" fill="#6b7280" font-size="12" text-anchor="middle">cache &amp; observability</text>
+    <line x1="228" y1="446" x2="1172" y2="446" stroke="#1a1c23"/>
+    <text x="252" y="474">Studio, King Abdullah Rd</text>
+    <text x="620" y="474">Riyadh</text>
+    <text x="820" y="474">SAR 480K</text>
+    <rect x="1000" y="458" width="86" height="24" rx="12" fill="rgba(245,158,11,0.14)"/><text x="1015" y="474" fill="#f59e0b" font-size="11">PENDING</text>
 
-  <line x1="540" y1="575" x2="565" y2="575" stroke="#262833" stroke-width="2"/>
+    <line x1="228" y1="496" x2="1172" y2="496" stroke="#1a1c23"/>
+    <text x="252" y="524">Plot, Bahria Town</text>
+    <text x="620" y="524">Islamabad</text>
+    <text x="820" y="524">PKR 90 lac</text>
+    <rect x="1000" y="508" width="86" height="24" rx="12" fill="rgba(34,211,238,0.14)"/><text x="1015" y="524" fill="#22d3ee" font-size="11">MORTGAGE</text>
 
-  <text x="60" y="700" fill="#6b7280" font-size="13">Node.js &#183; TypeScript &#183; NestJS &#183; MySQL &#183; PostgreSQL &#183; Redis &#183; AWS &#183; RBAC Logging</text>
-  <text x="60" y="725" fill="#3b82f6" font-size="14" font-weight="600">40M+ monthly users &#183; 45% latency reduction on core queries</text>
+    <line x1="228" y1="546" x2="1172" y2="546" stroke="#1a1c23"/>
+    <text x="252" y="574">Townhouse, Arabian Ranches</text>
+    <text x="620" y="574">Dubai</text>
+    <text x="820" y="574">AED 3.2M</text>
+    <rect x="1000" y="558" width="86" height="24" rx="12" fill="rgba(52,211,153,0.14)"/><text x="1015" y="574" fill="#34d399" font-size="11">ACTIVE</text>
+  </g>
+
+  <line x1="228" y1="600" x2="1172" y2="600" stroke="#20232e"/>
+  <text x="252" y="632" fill="#6b7285" font-size="11.5" letter-spacing="0.6">RBAC-LOGGED</text>
+  <text x="252" y="656" fill="#969db0" font-size="13">every read and write on this table is attributed and auditable</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="252" y="676" width="896" height="40" rx="8" fill="#161a24"/>
+    <text x="272" y="702" fill="#6b7285" font-size="12" font-family="JetBrains Mono, monospace">Node.js · NestJS · PostgreSQL · MySQL · Redis · AWS</text>
+  </g>
 </svg>

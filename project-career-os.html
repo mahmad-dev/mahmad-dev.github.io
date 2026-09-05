@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Career OS · Muhammad Ahmad</title>
-  <meta name="description" content="A career operations console running three simultaneous job-search tracks — Germany full-time, elite entry, EU mobility — from one evidence-backed profile, with a deterministic 11-factor scorer and a fabrication-guarded AI second opinion.">
+  <meta name="description" content="A career operations console that runs three simultaneous job-search tracks (Germany full-time, elite entry, EU mobility) from one evidence-backed profile, with a deterministic 11-factor scorer and a fabrication-guarded AI second opinion.">
   <meta name="theme-color" content="#08090c">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="Career OS · Muhammad Ahmad">
-  <meta property="og:description" content="Three simultaneous job-search tracks scored from one evidence-backed profile — deterministic scoring, a live Blue Card verdict engine, and an AI second opinion that withholds anything it can't back with evidence.">
+  <meta property="og:description" content="Three simultaneous job-search tracks scored from one evidence-backed profile: deterministic scoring, a live Blue Card verdict engine, and an AI second opinion that withholds anything it can't back with evidence.">
   <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/portfolio/portfolio-career-os.svg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -65,9 +65,9 @@
           <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>Career OS</span>
         </nav>
         <span class="eyebrow">AI &amp; Automation</span>
-        <h1>Career OS</h1>
-        <p class="lede">A personal career-operations console that runs three simultaneous job-search tracks — a full-time role in Germany, an elite/FAANG entry point, and EU-funded mobility — from one evidence-backed profile, and reduces each day to a single next action instead of a feed to scroll.</p>
-        <p class="project-metric">Three tracks, one profile, one decision a day — built and used for my own Blue Card search</p>
+        <h1 style="view-transition-name:vt-career-os-title">Career OS</h1>
+        <p class="lede">A personal career-operations console that runs three job searches at once: a full-time role in Germany, an elite or FAANG entry point, and EU-funded mobility. All three pull from one evidence-backed profile, and each day collapses to a single next action instead of a feed to scroll.</p>
+        <p class="project-metric">Three tracks, one profile, one decision a day: built and used for my own Blue Card search</p>
       </div>
     </section>
 
@@ -76,7 +76,7 @@
         <div class="detail-grid">
           <div>
             <figure class="detail-figure">
-              <img src="assets/img/portfolio/portfolio-career-os.svg" alt="Architecture diagram of Career OS: one candidate profile feeding three scored career tracks into a single daily next action">
+              <img src="assets/img/portfolio/portfolio-career-os.svg" alt="Career OS dashboard: a scored next action, a Blue Card verdict, and three job-search tracks" style="view-transition-name:vt-career-os-img">
             </figure>
             <div class="detail-body">
 <h2>The problem</h2>
@@ -87,33 +87,34 @@ up to date at 11pm. I built the tool I actually needed to run my own search with
 
 <h2>How it works</h2>
 <ul>
-  <li><strong>A deterministic, fully-visible scorer</strong> &mdash; eleven weighted factors (technical fit, immigration
-  viability, seniority, application-route quality, freshness, and more) combine into one 0&ndash;100 score with every
-  factor shown, never a black-box number. Disqualifying facts <strong>cap</strong> the score rather than silently
-  averaging it down, so the reason a role scored low stays legible.</li>
-  <li><strong>A five-layer discovery pipeline</strong>, base layer first: the official Bundesagentur f&uuml;r Arbeit API,
-  then employer ATS boards fingerprinted from every posting's own company link &mdash; a company graph that compounds,
-  since each run's postings surface next run's known employer boards &mdash; then aggregator APIs (Arbeitnow, RemoteOK,
-  The Muse, even Hacker News's "Who is hiring?" thread). Sources whose terms of service prohibit automated retrieval
-  (StepStone, XING, Indeed) are <strong>not scraped</strong>, on principle &mdash; excluded by design, with a generated
-  deep-link instead.</li>
-  <li><strong>A live Blue Card verdict engine</strong> that computes the &sect;16b&rarr;&sect;18g salary-transition math
-  against the actual current threshold for every Germany-track opportunity, not a hardcoded constant that goes stale.</li>
-  <li><strong>An optional LLM second opinion, gated by a fabrication guard</strong> &mdash; a six-provider router (Groq,
-  Cerebras, GitHub Models, OpenRouter, Gemini, Ollama) with automatic failover can produce a "should I apply?" verdict
-  and suggest CV language, but every suggested claim is checked against the candidate's own recorded evidence first. A
-  claim the model invents is <strong>withheld</strong>, with the specific violation shown &mdash; never silently
-  smoothed over into something that sounds plausible.</li>
-  <li><strong>Custom auth</strong> built rather than bolted on: Argon2id passphrase hashing, optional TOTP, and a JWT
-  session that re-checks an <code>epoch</code> column against the database on every request &mdash; the one thing that
-  makes "log out everywhere" actually invalidate outstanding sessions instead of just deleting one cookie.</li>
+  <li><strong>A deterministic, fully-visible scorer.</strong> Eleven weighted factors, technical fit, immigration
+  viability, seniority, application-route quality, freshness and more, combine into one 0&ndash;100 score, and every
+  factor is shown; there's no black-box number to just trust. A disqualifying fact <strong>caps</strong> the score
+  instead of quietly averaging it down, so you can always see exactly why a role scored low.</li>
+  <li><strong>A five-layer discovery pipeline.</strong> It starts with the official Bundesagentur f&uuml;r Arbeit API,
+  then moves to employer ATS boards fingerprinted straight from each posting's own company link. That builds a company
+  graph that compounds over time: every run's postings surface the next run's known employer boards. After that come
+  aggregator APIs (Arbeitnow, RemoteOK, The Muse, even Hacker News's "Who is hiring?" thread). Sites whose terms of
+  service prohibit automated retrieval, StepStone, XING, Indeed, are excluded on principle. They get a generated
+  deep-link instead of a scrape.</li>
+  <li><strong>A live Blue Card verdict engine.</strong> It runs the &sect;16b&rarr;&sect;18g salary-transition math
+  against this month's actual threshold for every Germany-track opportunity. That number moves; a hardcoded constant
+  would just quietly go stale.</li>
+  <li><strong>An optional LLM second opinion, gated by a fabrication guard.</strong> A six-provider router (Groq,
+  Cerebras, GitHub Models, OpenRouter, Gemini, Ollama) with automatic failover produces a should-I-apply verdict and
+  drafts CV language, but every claim it makes gets checked against my own recorded evidence first. If the model
+  invents something, it gets <strong>withheld</strong> and flagged with the specific rule it broke, not smoothed into
+  something that merely sounds plausible.</li>
+  <li><strong>Custom auth, built rather than bolted on.</strong> Argon2id passphrase hashing, optional TOTP, and a JWT
+  session that re-checks an <code>epoch</code> column against the database on every request. That last part is what
+  makes "log out everywhere" actually invalidate outstanding sessions, instead of just deleting one cookie and hoping.</li>
 </ul>
 
 <h2>What changed</h2>
-<p>The daily view collapses three parallel, high-stakes searches into one primary action, with everything else
-deliberately suppressed rather than listed &mdash; removing <em>what should I work on</em> as a decision every morning,
-not just organizing the list of options. 645+ tests back the scoring and pipeline logic; every page is server-rendered
-with Next.js 16 Server Actions as the only write path, so there is no separate REST layer to keep in sync with the UI.</p>
+<p>The daily view collapses three parallel, high-stakes searches into one primary action. Everything else is
+deliberately suppressed, not just tucked into a list, so <em>what should I work on</em> stops being a decision I make
+every morning. 645+ tests back the scoring and pipeline logic. Every page is server-rendered, with Next.js 16 Server
+Actions as the only write path, so there's no separate REST layer to keep in sync with the UI.</p>
             </div>
             <p style="margin-top:40px">
               <a class="btn btn-ghost" href="index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to all work</a>

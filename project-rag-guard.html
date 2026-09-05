@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>rag-integrity-guard · Muhammad Ahmad</title>
-  <meta name="description" content="A from-scratch retrieval-integrity layer that fingerprints RAG chunks at ingestion and re-verifies them at query time, catching retrieval poisoning before it reaches the LLM — 100% detection, 0% false positives on a public benchmark.">
+  <meta name="description" content="A from-scratch retrieval-integrity layer that fingerprints RAG chunks at ingestion and re-verifies them at query time, catching retrieval poisoning before it reaches the LLM. 100% detection, 0% false positives on a public benchmark.">
   <meta name="theme-color" content="#08090c">
 
   <meta property="og:type" content="article">
@@ -65,8 +65,8 @@
           <a href="index.html">Home</a> <span>/</span> <a href="index.html#work">Work</a> <span>/</span> <span>rag-integrity-guard</span>
         </nav>
         <span class="eyebrow">Research</span>
-        <h1>rag-integrity-guard</h1>
-        <p class="lede">A from-scratch retrieval-integrity layer for RAG systems: every chunk is fingerprinted at ingestion and re-verified at query time, so a compromised vector store, a poisoned document, or a direct database edit is caught before it reaches the LLM &mdash; not trusted by default.</p>
+        <h1 style="view-transition-name:vt-rag-guard-title">rag-integrity-guard</h1>
+        <p class="lede">A from-scratch retrieval-integrity layer for RAG systems. Every chunk gets fingerprinted at ingestion and re-verified at query time, so a compromised vector store, a poisoned document, or a direct database edit gets caught before it reaches the LLM instead of trusted by default.</p>
         <p class="project-metric">100% true-positive · 0% false-positive across three attack types on a 500-pair public benchmark</p>
       </div>
     </section>
@@ -76,35 +76,35 @@
         <div class="detail-grid">
           <div>
             <figure class="detail-figure">
-              <img src="assets/img/portfolio/portfolio-rag-guard.svg" alt="Architecture diagram: documents are dual-fingerprinted at ingestion, then re-verified at every retrieval into VALID, SEMANTIC_DRIFT or HASH_MISMATCH">
+              <img src="assets/img/portfolio/portfolio-rag-guard.svg" alt="Attack simulator catching a tampered chunk in real time, with a 100% true-positive, 0% false-positive benchmark" style="view-transition-name:vt-rag-guard-img">
             </figure>
             <div class="detail-body">
 <h2>The problem</h2>
-<p>Standard RAG trusts whatever the vector store hands back at query time, unconditionally. If that store is tampered
-with &mdash; a compromised ingestion pipeline, a poisoned document, a direct database edit &mdash; the LLM has no way to
-tell real context from an attacker's substitute. It just answers, confidently, from whatever it was given.</p>
+<p>Standard RAG trusts whatever the vector store hands back at query time, no questions asked. If that store gets
+tampered with, through a compromised ingestion pipeline, a poisoned document, or a direct database edit, the LLM has
+no way to tell real context from an attacker's substitute. It just answers confidently from whatever it was given.</p>
 
 <h2>How it works</h2>
 <ul>
   <li>Every chunk gets a <strong>dual signature</strong> at ingestion: a cryptographic hash (BLAKE3/SHA-256) of the
   normalized text for exact-match tamper detection, plus an L2-normalized semantic embedding for similarity comparison.</li>
   <li><code>IntegrityGuardRetriever</code> wraps any LangChain <code>BaseRetriever</code> as a drop-in and re-verifies
-  every chunk it returns: a hash match is <strong>VALID</strong>, full stop; a hash miss with the embedding still highly
-  similar is <strong>SEMANTIC_DRIFT</strong> &mdash; content changed just enough to stay plausible, exactly what a
-  disguised poisoning attempt looks like; a hash miss with the embedding diverged too is a blunter
-  <strong>HASH_MISMATCH</strong>. Only <code>VALID</code> chunks are ever treated as trustworthy.</li>
-  <li>A configurable <code>StrictnessMode</code> decides what happens next &mdash; <code>STRICT</code> blocks the whole
-  query, <code>FILTER</code> silently drops the offending chunk, <code>LOG_ONLY</code> returns everything annotated for
+  every chunk it returns. A hash match is <strong>VALID</strong>, full stop. A hash miss where the embedding is still
+  highly similar gets flagged <strong>SEMANTIC_DRIFT</strong>: the content changed just enough to stay plausible,
+  which is exactly what a disguised poisoning attempt looks like. A hash miss where the embedding has diverged too is
+  the blunter <strong>HASH_MISMATCH</strong>. Only <code>VALID</code> chunks are ever treated as trustworthy.</li>
+  <li>A configurable <code>StrictnessMode</code> decides what happens next. <code>STRICT</code> blocks the whole query,
+  <code>FILTER</code> quietly drops the offending chunk, and <code>LOG_ONLY</code> returns everything annotated for
   audit.</li>
-  <li>A zero-dependency <code>HashingEmbedder</code> ships by default &mdash; deterministic hashed n-grams, no API key,
-  no downloaded weights, runs anywhere at zero cost &mdash; with a real <code>OpenAIEmbedder</code> swap-in for genuine
-  semantic comparison.</li>
+  <li>A zero-dependency <code>HashingEmbedder</code> ships by default: deterministic hashed n-grams, no API key, no
+  downloaded weights, runs anywhere at zero cost. A real <code>OpenAIEmbedder</code> swaps in when genuine semantic
+  comparison is worth the cost.</li>
 </ul>
 
 <h2>Benchmarked, not asserted</h2>
-<p>Run against 500 real (claim, gold-evidence) pairs from the <a href="https://fever.ai/" target="_blank" rel="noopener">FEVER</a>
-dataset, split across a benign baseline and three attack types &mdash; exact mutation, prompt-injection payload
-insertion, and wholesale semantic-drift replacement:</p>
+<p>I ran it against 500 real (claim, gold-evidence) pairs from the <a href="https://fever.ai/" target="_blank" rel="noopener">FEVER</a>
+dataset, split across a benign baseline and three attack types: exact mutation, prompt-injection payload insertion,
+and wholesale semantic-drift replacement.</p>
             </div>
 
             <figure class="detail-figure" style="margin-top:0">
@@ -113,20 +113,20 @@ insertion, and wholesale semantic-drift replacement:</p>
 
             <div class="detail-body">
 <p><strong>Overall: 100% true-positive rate, 0% false-positive rate</strong>, at a mean verification overhead of
-<strong>2.73ms</strong> (7.07ms p95) using the zero-cost default embedder &mdash; fast enough to sit in the retrieval
-path unconditionally, not as an opt-in you'd disable under load.</p>
+<strong>2.73ms</strong> (7.07ms p95) using the zero-cost default embedder. That's fast enough to sit in the retrieval
+path by default, not as an opt-in toggle you'd disable the moment load got heavy.</p>
 
-<p>The honest finding underneath that headline number: TPR/FPR are a designed invariant of hash-based verification, not
-a probabilistic score &mdash; any byte-level change fails the hash by construction. The real signal is the
-<code>HASH_MISMATCH</code> vs. <code>SEMANTIC_DRIFT</code> split, and a threshold-sensitivity sweep shows the
-zero-cost <code>HashingEmbedder</code> is worst, specifically, at reading the <em>sneakiest</em> attack (a wholesale
-topical swap) as similar &mdash; because it tracks lexical n-gram overlap, not meaning. That's the kind of limitation
-that's easy to bury and I'd rather have on the record: a real semantic embedder would likely make that number worse
-before it makes it better, which is the more important thing for a poisoning defense to get right.</p>
+<p>One caveat worth stating plainly: the 100/0 numbers aren't a probabilistic score, they're a property of hash
+verification. Any byte-level change fails the hash, by construction, so that part was never really in doubt. The
+interesting number is the <code>HASH_MISMATCH</code> vs. <code>SEMANTIC_DRIFT</code> split. A threshold-sensitivity
+sweep shows the zero-cost <code>HashingEmbedder</code> struggles specifically with the <em>sneakiest</em> attack, a
+wholesale topical swap, because it's reading lexical n-gram overlap rather than meaning. A real semantic embedder
+would probably make that number worse before it gets better, and that's the part that actually matters for a
+poisoning defense to get right.</p>
 
 <h2>What it looks like</h2>
-<p>A live dashboard ships alongside the library &mdash; ingest sample facts, run a query, then launch an attack on an
-ingested chunk and watch the guard classify it in real time:</p>
+<p>A live dashboard ships alongside the library. Ingest sample facts, run a query, then launch an attack on an
+ingested chunk and watch the guard classify it in real time.</p>
             </div>
 
             <figure class="detail-figure" style="margin-top:0">
@@ -135,11 +135,11 @@ ingested chunk and watch the guard classify it in real time:</p>
 
             <div class="detail-body">
 <h2>Engineering, not just a notebook</h2>
-<p>A proper monorepo: the core Python package (hasher, embedder protocol matching LangChain's own <code>Embeddings</code>
-interface, fingerprint store, the LangChain retriever wrapper), a FastAPI backend deployed as a Vercel Python serverless
-function, and a Next.js dashboard &mdash; deployed as two independent Vercel projects on purpose, after the one-project
-version silently lost Next.js framework detection. 89 tests, 96%+ coverage, ruff and mypy (strict) enforced in CI on
-every push, across Python 3.11 and 3.12.</p>
+<p>It's a proper monorepo: the core Python package (hasher, an embedder protocol matching LangChain's own
+<code>Embeddings</code> interface, the fingerprint store, the LangChain retriever wrapper), a FastAPI backend deployed
+as a Vercel Python serverless function, and a Next.js dashboard. Those last two run as two independent Vercel projects
+on purpose, after the one-project version silently lost Next.js framework detection. 89 tests, 96%+ coverage, ruff and
+mypy in strict mode enforced in CI on every push, across Python 3.11 and 3.12.</p>
             </div>
 
             <p style="margin-top:40px">

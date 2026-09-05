@@ -461,13 +461,13 @@
 
           <article class="project-card" data-tags="ai backend">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-career-os.svg" alt="Architecture diagram of Career OS: one candidate profile feeding three scored career tracks into a single daily next action" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-career-os.svg" alt="Career OS dashboard: a scored next action, a Blue Card verdict, and three job-search tracks" loading="lazy" style="view-transition-name:vt-career-os-img">
               <span class="project-kind">AI &amp; Automation</span>
               <span class="project-live">Live</span>
             </div>
             <div class="project-body">
-              <h3>Career OS</h3>
-              <p>A personal career-operations console running three simultaneous job-search tracks &mdash; Germany full-time, elite/FAANG entry, EU-funded mobility &mdash; from one evidence-backed profile, with a deterministic 11-factor scorer and a fabrication-guarded AI second opinion.</p>
+              <h3 style="view-transition-name:vt-career-os-title">Career OS</h3>
+              <p>A personal career-operations console that runs three job searches at once (Germany full-time, elite/FAANG entry, EU-funded mobility) from one evidence-backed profile, with a deterministic 11-factor scorer and a fabrication-guarded AI second opinion.</p>
               <p class="project-metric">Three tracks, one profile, one next action a day &middot; 645+ tests</p>
               <div class="tags"><span>Next.js 16</span><span>TypeScript</span><span>Drizzle/Postgres</span><span>LLM router</span></div>
               <a class="project-link" href="project-career-os.html">
@@ -479,12 +479,12 @@
 
           <article class="project-card" data-tags="research ai">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-rag-guard.svg" alt="Architecture diagram: documents fingerprinted at ingestion, re-verified at every retrieval into VALID, SEMANTIC_DRIFT or HASH_MISMATCH" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-rag-guard.svg" alt="Attack simulator catching a tampered chunk in real time, with a 100% true-positive, 0% false-positive benchmark" loading="lazy" style="view-transition-name:vt-rag-guard-img">
               <span class="project-kind">Research</span>
               <span class="project-live">Live</span>
             </div>
             <div class="project-body">
-              <h3>rag-integrity-guard</h3>
+              <h3 style="view-transition-name:vt-rag-guard-title">rag-integrity-guard</h3>
               <p>A from-scratch retrieval-integrity layer: every RAG chunk is fingerprinted at ingestion and re-verified at query time, catching a poisoned or tampered chunk before it reaches the LLM instead of trusting the vector store by default.</p>
               <p class="project-metric">100% detection / 0% false positives on a 500-pair public benchmark &middot; 2.73ms overhead</p>
               <div class="tags"><span>Python</span><span>LangChain</span><span>FastAPI</span><span>pytest</span></div>
@@ -497,11 +497,11 @@
 
           <article class="project-card" data-tags="ai">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-ava.svg" alt="Architecture diagram of AVA, the AI copilot and delivery pipeline" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-ava.svg" alt="AVA: PR prep time cut from 40 to 6 minutes, automated end to end" loading="lazy" style="view-transition-name:vt-ava-img">
               <span class="project-kind">AI &amp; Automation</span>
             </div>
             <div class="project-body">
-              <h3>AVA: AI Copilot &amp; Delivery Pipeline</h3>
+              <h3 style="view-transition-name:vt-ava-title">AVA: AI Copilot &amp; Delivery Pipeline</h3>
               <p>An internal copilot used across Dubizzle products: a chat request becomes a wireframe, a Jira ticket, and a reviewed pull request without leaving the conversation.</p>
               <p class="project-metric">PR prep 40 min → 6 min · used across multiple product teams</p>
               <div class="tags"><span>Claude API</span><span>Node.js</span><span>TypeScript</span><span>Jira API</span></div>
@@ -514,11 +514,11 @@
 
           <article class="project-card" data-tags="ai backend">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-mcp.svg" alt="Diagram of the Model Context Protocol gateway" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-mcp.svg" alt="MCP Gateway: about 30% fewer manual developer lookups" loading="lazy" style="view-transition-name:vt-mcp-img">
               <span class="project-kind">AI &amp; Automation</span>
             </div>
             <div class="project-body">
-              <h3>Model Context Protocol Gateway</h3>
+              <h3 style="view-transition-name:vt-mcp-title">Model Context Protocol Gateway</h3>
               <p>MCP servers that expose internal APIs to LLM agents as typed, permissioned tools, so agents resolve queries directly instead of engineers hunting through services.</p>
               <p class="project-metric">~30% fewer manual developer lookups</p>
               <div class="tags"><span>MCP</span><span>TypeScript</span><span>Internal APIs</span><span>RBAC</span></div>
@@ -531,11 +531,11 @@
 
           <article class="project-card" data-tags="ai">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-rag.svg" alt="Diagram of the RAG knowledge base" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-rag.svg" alt="Knowledge RAG: zero senior engineers pulled in to answer onboarding questions" loading="lazy" style="view-transition-name:vt-rag-img">
               <span class="project-kind">AI &amp; Automation</span>
             </div>
             <div class="project-body">
-              <h3>RAG Knowledge Base</h3>
+              <h3 style="view-transition-name:vt-rag-title">RAG Knowledge Base</h3>
               <p>Retrieval over internal documentation, engineering guidelines and architecture decisions, so anyone can ask "why is it built this way?" in plain English and get a sourced answer.</p>
               <p class="project-metric">Onboarding questions answered without pulling senior engineers in</p>
               <div class="tags"><span>LangChain</span><span>Vector search</span><span>Embeddings</span><span>Node.js</span></div>
@@ -548,11 +548,11 @@
 
           <article class="project-card" data-tags="research ai web3">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-data-integrity.svg" alt="Diagram of the blockchain-anchored data integrity layer" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-data-integrity.svg" alt="M.Sc. research at TU Ilmenau: blockchain-anchored fingerprints over a RAG corpus" loading="lazy" style="view-transition-name:vt-data-integrity-img">
               <span class="project-kind">Research</span>
             </div>
             <div class="project-body">
-              <h3>Data-Integrity Layer for LangChain QnA</h3>
+              <h3 style="view-transition-name:vt-data-integrity-title">Data-Integrity Layer for LangChain QnA</h3>
               <p>Blockchain-anchored fingerprints over a retrieval corpus, re-verified at inference time, so tampering with source documents is detected before a poisoned answer reaches the user.</p>
               <p class="project-metric">M.Sc. research at TU Ilmenau · paper in progress</p>
               <div class="tags"><span>LangChain</span><span>Merkle proofs</span><span>Python</span><span>Smart contracts</span></div>
@@ -565,11 +565,11 @@
 
           <article class="project-card" data-tags="backend">
             <div class="project-thumb">
-              <img src="assets/img/portfolio/portfolio-crm.svg" alt="Architecture diagram of the property CRM engine" loading="lazy">
+              <img src="assets/img/portfolio/portfolio-crm.svg" alt="Propforce admin dashboard: 40M+ monthly users, 45% lower query latency, 5,000+ mortgage clients" loading="lazy" style="view-transition-name:vt-crm-img">
               <span class="project-kind">Backend Systems</span>
             </div>
             <div class="project-body">
-              <h3>High-Scale Property CRM Engine</h3>
+              <h3 style="view-transition-name:vt-crm-title">High-Scale Property CRM Engine</h3>
               <p>The production backend behind Propforce, Zameen.com and Bayut.sa: transactional services, background workers and an end-to-end mortgage flow at real-estate-marketplace volume.</p>
               <p class="project-metric">40M+ monthly users · 45% lower query latency · 5,000+ mortgage clients</p>
               <div class="tags"><span>NestJS</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>AWS</span></div>

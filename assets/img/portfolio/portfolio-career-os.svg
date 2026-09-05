@@ -1,73 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="JetBrains Mono, monospace">
   <defs>
-    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cosBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0c10"/>
       <stop offset="100%" stop-color="#12131c"/>
     </linearGradient>
-    <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#3b82f6"/>
-    </marker>
+    <linearGradient id="cosRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <clipPath id="cosClip"><rect width="1200" height="800" rx="0"/></clipPath>
   </defs>
 
-  <rect width="1200" height="800" fill="url(#bgC)"/>
+  <g clip-path="url(#cosClip)">
+    <rect width="1200" height="800" fill="url(#cosBg)"/>
 
-  <text x="60" y="70" fill="#f3f4f6" font-size="30" font-weight="700">Career OS</text>
-  <text x="60" y="100" fill="#6b7280" font-size="16">Three career tracks, one evidence-backed profile</text>
+    <!-- window chrome -->
+    <rect x="0" y="0" width="1200" height="64" fill="#0d0f15"/>
+    <line x1="0" y1="64" x2="1200" y2="64" stroke="#20232e" stroke-width="1"/>
+    <circle cx="34" cy="32" r="6" fill="#2a2d38"/>
+    <circle cx="56" cy="32" r="6" fill="#2a2d38"/>
+    <circle cx="78" cy="32" r="6" fill="#2a2d38"/>
+    <rect x="112" y="19" width="150" height="26" rx="13" fill="#161a24"/>
+    <text x="187" y="36" fill="#7b8394" font-size="12" text-anchor="middle">career-os · today</text>
 
-  <!-- Profile -->
-  <rect x="60" y="340" width="210" height="120" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
-  <text x="165" y="388" fill="#f3f4f6" font-size="17" text-anchor="middle" font-weight="600">Candidate Profile</text>
-  <text x="165" y="410" fill="#3b82f6" font-size="12" text-anchor="middle">evidence-anchored</text>
-  <text x="165" y="430" fill="#6b7280" font-size="11" text-anchor="middle">no claim without a source</text>
+    <!-- ghost monogram -->
+    <text x="1180" y="760" fill="#ffffff" opacity="0.045" font-size="360" font-weight="700" text-anchor="end" letter-spacing="-14">OS</text>
 
-  <line x1="270" y1="360" x2="360" y2="270" stroke="#10b981" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="270" y1="400" x2="360" y2="400" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="270" y1="440" x2="360" y2="530" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrC)"/>
+    <!-- left: primary action card -->
+    <rect x="48" y="104" width="672" height="632" rx="14" fill="#11141c" stroke="#20232e"/>
+    <text x="80" y="150" fill="#6b7285" font-size="13" letter-spacing="1.5">NEXT ACTION</text>
 
-  <!-- Three tracks -->
-  <rect x="370" y="205" width="230" height="90" rx="8" fill="#1a1c23" stroke="#10b981"/>
-  <text x="485" y="240" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Germany · Full-time</text>
-  <text x="485" y="262" fill="#10b981" font-size="12" text-anchor="middle">Blue Card floor checked live</text>
-  <text x="485" y="280" fill="#6b7280" font-size="11" text-anchor="middle">Bundesagentur + employer ATS boards</text>
+    <text x="80" y="200" fill="#e8eaf0" font-size="30" font-weight="700" font-family="Arial, sans-serif">Apply — Backend Engineer</text>
+    <text x="80" y="230" fill="#969db0" font-size="16" font-family="Arial, sans-serif">Series B · Munich · posted 6h ago</text>
 
-  <rect x="370" y="355" width="230" height="90" rx="8" fill="#1a1c23" stroke="#f59e0b"/>
-  <text x="485" y="390" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Elite · FAANG entry</text>
-  <text x="485" y="412" fill="#f59e0b" font-size="12" text-anchor="middle">11-dimension readiness score</text>
-  <text x="485" y="430" fill="#6b7280" font-size="11" text-anchor="middle">realistic entry door, not just prestige</text>
+    <!-- score ring -->
+    <circle cx="112" cy="300" r="34" fill="none" stroke="#20232e" stroke-width="8"/>
+    <circle cx="112" cy="300" r="34" fill="none" stroke="url(#cosRing)" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.6" stroke-dashoffset="27.8" transform="rotate(-90 112 300)"/>
+    <text x="112" y="306" fill="#e8eaf0" font-size="20" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif">87</text>
+    <text x="164" y="294" fill="#e8eaf0" font-size="14" font-family="Arial, sans-serif">Blue Card floor cleared</text>
+    <text x="164" y="313" fill="#6b7285" font-size="12">checked against this month's threshold</text>
 
-  <rect x="370" y="490" width="230" height="90" rx="8" fill="#1a1c23" stroke="#a78bfa"/>
-  <text x="485" y="525" fill="#f3f4f6" font-size="15" text-anchor="middle" font-weight="600">Mobility · EU funding</text>
-  <text x="485" y="547" fill="#a78bfa" font-size="12" text-anchor="middle">tracked to reimbursement</text>
-  <text x="485" y="565" fill="#6b7280" font-size="11" text-anchor="middle">not just acceptance</text>
+    <line x1="80" y1="356" x2="688" y2="356" stroke="#20232e"/>
 
-  <line x1="600" y1="250" x2="700" y2="340" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="600" y1="400" x2="700" y2="390" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
-  <line x1="600" y1="535" x2="700" y2="440" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrC)"/>
+    <text x="80" y="392" fill="#6b7285" font-size="12" letter-spacing="1.2">SCORE BREAKDOWN — 11 FACTORS, NONE HIDDEN</text>
+    <g font-size="12.5" fill="#969db0">
+      <rect x="80" y="410" width="608" height="10" rx="5" fill="#1a1c23"/>
+      <rect x="80" y="410" width="540" height="10" rx="5" fill="#34d399"/>
+      <text x="80" y="440">Technical fit</text><text x="688" y="440" text-anchor="end" fill="#e8eaf0">18/20</text>
 
-  <!-- Scorer + next action -->
-  <rect x="710" y="300" width="230" height="180" rx="8" fill="#1a1c23" stroke="#3b82f6"/>
-  <text x="825" y="335" fill="#f3f4f6" font-size="17" text-anchor="middle" font-weight="600">Deterministic Scorer</text>
-  <text x="825" y="357" fill="#3b82f6" font-size="12" text-anchor="middle">11 weighted, visible factors</text>
+      <rect x="80" y="458" width="608" height="10" rx="5" fill="#1a1c23"/>
+      <rect x="80" y="458" width="608" height="10" rx="5" fill="#22d3ee"/>
+      <text x="80" y="488">Immigration viability</text><text x="688" y="488" text-anchor="end" fill="#e8eaf0">20/20</text>
 
-  <rect x="735" y="375" width="180" height="40" rx="6" fill="#12131c" stroke="#262833"/>
-  <text x="825" y="400" fill="#9ca3af" font-size="12" text-anchor="middle">Caps, never subtracts</text>
+      <rect x="80" y="506" width="608" height="10" rx="5" fill="#1a1c23"/>
+      <rect x="80" y="506" width="430" height="10" rx="5" fill="#f59e0b"/>
+      <text x="80" y="536">Application-route quality</text><text x="688" y="536" text-anchor="end" fill="#e8eaf0">14/20</text>
 
-  <rect x="735" y="425" width="180" height="40" rx="6" fill="#12131c" stroke="#262833"/>
-  <text x="825" y="450" fill="#9ca3af" font-size="12" text-anchor="middle">One next action, surfaced daily</text>
+      <rect x="80" y="554" width="608" height="10" rx="5" fill="#1a1c23"/>
+      <rect x="80" y="554" width="565" height="10" rx="5" fill="#a78bfa"/>
+      <text x="80" y="584">Freshness &amp; seniority</text><text x="688" y="584" text-anchor="end" fill="#e8eaf0">+7 more</text>
+    </g>
 
-  <line x1="940" y1="390" x2="1000" y2="390" stroke="#10b981" stroke-width="2" marker-end="url(#arrC)"/>
+    <rect x="80" y="628" width="608" height="60" rx="10" fill="#161a24" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="102" y="654" fill="#22d3ee" font-size="12" font-weight="600">CAPPED, NOT AVERAGED</text>
+    <text x="102" y="674" fill="#6b7285" font-size="11.5">a disqualifying fact caps this score — it never gets silently smoothed out</text>
 
-  <rect x="1010" y="345" width="140" height="90" rx="8" fill="#1a1c23" stroke="#10b981"/>
-  <text x="1080" y="380" fill="#f3f4f6" font-size="14" text-anchor="middle" font-weight="600">Today</text>
-  <text x="1080" y="400" fill="#10b981" font-size="11" text-anchor="middle">the one screen</text>
-  <text x="1080" y="418" fill="#6b7280" font-size="10" text-anchor="middle">you open</text>
+    <!-- right: three tracks -->
+    <text x="750" y="130" fill="#6b7285" font-size="13" letter-spacing="1.5">THREE TRACKS, ONE PROFILE</text>
 
-  <!-- LLM router, secondary path -->
-  <line x1="825" y1="300" x2="825" y2="230" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrC)"/>
-  <rect x="710" y="150" width="230" height="70" rx="8" fill="#12131c" stroke="#262833" stroke-dasharray="4,3"/>
-  <text x="825" y="180" fill="#9ca3af" font-size="13" text-anchor="middle" font-weight="600">LLM Router (optional)</text>
-  <text x="825" y="200" fill="#6b7280" font-size="11" text-anchor="middle">6-provider failover · fabrication-guarded</text>
+    <rect x="750" y="150" width="402" height="184" rx="12" fill="#11141c" stroke="#34d399" stroke-opacity="0.4"/>
+    <circle cx="778" cy="180" r="5" fill="#34d399"/>
+    <text x="796" y="185" fill="#e8eaf0" font-size="16" font-weight="700" font-family="Arial, sans-serif">Germany · Full-time</text>
+    <text x="778" y="215" fill="#6b7285" font-size="12">Bundesagentur API + employer ATS boards</text>
+    <text x="778" y="238" fill="#34d399" font-size="26" font-weight="700" font-family="Arial, sans-serif">14</text>
+    <text x="778" y="256" fill="#6b7285" font-size="11">open roles above the Blue Card floor</text>
+    <rect x="778" y="292" width="346" height="8" rx="4" fill="#1a1c23"/>
+    <rect x="778" y="292" width="240" height="8" rx="4" fill="#34d399"/>
 
-  <text x="60" y="640" fill="#6b7280" font-size="13">Next.js 16 &#183; Server Actions &#183; Drizzle/Postgres &#183; TypeScript strict</text>
-  <text x="60" y="665" fill="#3b82f6" font-size="14" font-weight="600">645+ tests &#183; a claim the model can't back with evidence is withheld, not shown</text>
+    <rect x="750" y="350" width="402" height="184" rx="12" fill="#11141c" stroke="#f59e0b" stroke-opacity="0.4"/>
+    <circle cx="778" cy="380" r="5" fill="#f59e0b"/>
+    <text x="796" y="385" fill="#e8eaf0" font-size="16" font-weight="700" font-family="Arial, sans-serif">Elite · FAANG entry</text>
+    <text x="778" y="415" fill="#6b7285" font-size="12">11-dimension readiness score</text>
+    <text x="778" y="438" fill="#f59e0b" font-size="26" font-weight="700" font-family="Arial, sans-serif">3</text>
+    <text x="778" y="456" fill="#6b7285" font-size="11">realistic entry doors this cycle</text>
+    <rect x="778" y="492" width="346" height="8" rx="4" fill="#1a1c23"/>
+    <rect x="778" y="492" width="120" height="8" rx="4" fill="#f59e0b"/>
+
+    <rect x="750" y="550" width="402" height="184" rx="12" fill="#11141c" stroke="#a78bfa" stroke-opacity="0.4"/>
+    <circle cx="778" cy="580" r="5" fill="#a78bfa"/>
+    <text x="796" y="585" fill="#e8eaf0" font-size="16" font-weight="700" font-family="Arial, sans-serif">Mobility · EU funding</text>
+    <text x="778" y="615" fill="#6b7285" font-size="12">tracked to reimbursement, not just acceptance</text>
+    <text x="778" y="638" fill="#a78bfa" font-size="26" font-weight="700" font-family="Arial, sans-serif">1</text>
+    <text x="778" y="656" fill="#6b7285" font-size="11">application pending decision</text>
+    <rect x="778" y="692" width="346" height="8" rx="4" fill="#1a1c23"/>
+    <rect x="778" y="692" width="300" height="8" rx="4" fill="#a78bfa"/>
+  </g>
 </svg>
