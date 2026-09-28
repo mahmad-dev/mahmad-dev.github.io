@@ -1040,3 +1040,34 @@ html[data-theme="light"] .theme-toggle .moon { display: none; }
   .project-grid { grid-template-columns: 1fr; }
   .hero-actions .btn { flex: 1 1 auto; }
 }
+
+/* ---------- Language switch (EN | DE) ---------- */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 2px;
+  overflow: hidden;
+}
+.lang-switch a {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--text-faint);
+  padding: 5px 10px;
+  border-radius: 999px;
+  line-height: 1;
+  transition: color .18s ease, background .18s ease;
+}
+.lang-switch a:hover { color: var(--text); }
+/* The active edition is the current page, so it reads as a state, not a link. */
+.lang-switch a.active {
+  color: var(--on-accent);
+  background: var(--accent-line);
+}
+@media (max-width: 720px) {
+  .lang-switch a { padding: 5px 8px; font-size: 11px; }
+}

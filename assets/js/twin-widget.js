@@ -47,16 +47,23 @@
   style.textContent = CSS;
   document.head.appendChild(style);
 
+  /* The widget is injected by script, so the /de/ build never sees this text.
+     It reads the page's own lang instead, which the build already sets. */
+  var isGerman = (document.documentElement.getAttribute('lang') || 'en').indexOf('de') === 0;
+  var COPY = isGerman
+    ? { launch: 'Frag meinen KI-Twin', expand: 'Ganze Seite öffnen', close: 'Schließen', title: 'Ask Ahmad, ein KI-Twin' }
+    : { launch: 'Ask my AI twin', expand: 'Open full page', close: 'Close', title: 'Ask Ahmad, an AI twin' };
+
   var launcher = document.createElement('button');
   launcher.type = 'button';
   launcher.className = 'twin-launcher';
   launcher.setAttribute('aria-expanded', 'false');
-  launcher.innerHTML = '<span class="twin-launcher-dot" aria-hidden="true"></span>Ask my AI twin';
+  launcher.innerHTML = '<span class="twin-launcher-dot" aria-hidden="true"></span>' + COPY.launch;
 
   var panel = document.createElement('div');
   panel.className = 'twin-panel';
   panel.setAttribute('role', 'dialog');
-  panel.setAttribute('aria-label', 'Ask Ahmad, an AI twin');
+  panel.setAttribute('aria-label', COPY.title);
   panel.hidden = true;
 
   var bar = document.createElement('div');
@@ -66,12 +73,12 @@
   expand.href = TWIN_ORIGIN;
   expand.target = '_blank';
   expand.rel = 'noopener';
-  expand.textContent = 'Open full page';
+  expand.textContent = COPY.expand;
 
   var close = document.createElement('button');
   close.type = 'button';
-  close.setAttribute('aria-label', 'Close');
-  close.textContent = 'Close';
+  close.setAttribute('aria-label', COPY.close);
+  close.textContent = COPY.close;
 
   bar.appendChild(expand);
   bar.appendChild(close);

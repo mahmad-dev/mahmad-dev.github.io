@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build-time tooling. Not served; the site itself stays static HTML.",
+  "scripts": {
+    "i18n": "node build-i18n.mjs",
+    "i18n:report": "node build-i18n.mjs --report"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}

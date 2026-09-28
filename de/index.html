@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammad Ahmad · Full-Stack Engineer &amp; KI-Systeme</title>
+  <meta name="description" content="Software Engineer mit über drei Jahren Erfahrung in Backend-, Full-Stack- und KI-Systemen, der Node.js/TypeScript-Produkte im Maßstab von über 40 Mio. monatlichen Nutzern baut. Forward Deployed Engineer im Venture Lab der UnternehmerTUM in München und M.Sc.-Student an der TU Ilmenau.">
+  <meta name="keywords" content="Muhammad Ahmad, Software Engineer, Backend Engineer, Werkstudent, Node.js, TypeScript, NestJS, LLM, RAG, MCP Server, AI Engineer, TU Ilmenau, Deutschland">
+  <meta name="author" content="Muhammad Ahmad">
+  <meta name="theme-color" content="#08090c">
+  <link rel="canonical" href="https://mahmad-dev.github.io/de/index.html">
+  <link rel="alternate" hreflang="en" href="https://mahmad-dev.github.io/index.html">
+  <link rel="alternate" hreflang="de" href="https://mahmad-dev.github.io/de/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://mahmad-dev.github.io/index.html">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mahmad-dev.github.io/">
+  <meta property="og:title" content="Muhammad Ahmad · Full-Stack Engineer & KI-Systeme">
+  <meta property="og:description" content="Über drei Jahre Node.js/TypeScript in Backend und Full-Stack im Maßstab von über 40 Mio. MAU, dazu agentische KI-Pipelines, MCP und RAG. Jetzt Forward Deployed Engineer im Venture Lab der UnternehmerTUM in München, parallel zum M.Sc. an der TU Ilmenau.">
+  <meta property="og:image" content="https://mahmad-dev.github.io/assets/img/hero-landscape.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="icon" sizes="any" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <!-- Apply saved theme before first paint to avoid a flash -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Ahmad",
+    "jobTitle": ["Forward Deployed Engineer", "Full-Stack Engineer, Backend & AI Systems"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "UnternehmerTUM",
+      "url": "https://www.unternehmertum.de/"
+    },
+    "url": "https://mahmad-dev.github.io/",
+    "email": "mailto:ahmad.arshad7869@gmail.com",
+    "telephone": "+49 179 1647953",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Technische Universität Ilmenau" },
+      { "@type": "CollegeOrUniversity", "name": "FAST National University of Computer & Emerging Sciences" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Ilmenau", "addressCountry": "DE" },
+    "sameAs": [
+      "https://www.linkedin.com/in/mahmad12/",
+      "https://github.com/mahmad-dev"
+    ],
+    "knowsAbout": ["Node.js", "TypeScript", "NestJS", "React", "Next.js", "PostgreSQL", "Distributed Systems", "Retrieval-Augmented Generation", "Model Context Protocol", "LangChain"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">MA</span>
+        <span>Muhammad Ahmad <span class="brand-sub">· Full-Stack &amp; KI</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <a href="#about">Über mich</a>
+        <a href="#experience">Erfahrung</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Projekte</a>
+        <a href="#recommendations">Referenzen</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language / Sprache"><a href="../index.html" hreflang="en" lang="en">EN</a><a href="index.html" hreflang="de" lang="de" class="active" aria-current="true">DE</a></div>
+        <a class="btn btn-ghost btn-sm header-cta" href="../assets/Muhammad_Ahmad_Resume.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Lebenslauf
+        </a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Farbschema umschalten">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Menü umschalten" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            Forward Deployed Engineer II · UnternehmerTUM, München
+          </span>
+
+          <h1>Muhammad Ahmad<br><span class="grad">Full-Stack Engineer &amp; KI-Systeme</span></h1>
+
+          <p class="hero-role">Ich baue <span class="rotator" data-words="Full-Stack-Produkte von Anfang bis Ende|Backend-Systeme im Produktivbetrieb|agentische KI-Pipelines|MCP-Gateways für LLM-Agenten|RAG-Wissensdatenbanken|APIs, die bei 40 Mio. Nutzern standhalten"></span><span class="caret" aria-hidden="true"></span></p>
+
+          <p class="hero-lede">
+            Software Engineer mit <strong>über drei Jahren</strong> Erfahrung in Backend-, Full-Stack- und KI-Systemen, der
+            Node.js/TypeScript-Produkte hinter <strong>Zameen.com, Bayut.sa und Propforce</strong> ausliefert (über 40 Mio. monatliche Nutzer).
+            Darauf aufbauend habe ich die KI-Schicht gebaut: einen internen Copiloten, MCP-Server und Retrieval-Systeme, die Entwickler
+            täglich nutzen. Jetzt <strong>Forward Deployed Engineer im Venture Lab der UnternehmerTUM</strong> in München, mitten
+            in Produktteams, wo ich KI-Anwendungsfälle in Produkte verwandle, die Menschen tatsächlich nutzen, parallel zum M.Sc. an der TU Ilmenau.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">
+              Ausgewählte Arbeiten ansehen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a class="btn btn-ghost" href="../assets/Muhammad_Ahmad_Resume.pdf" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Lebenslauf herunterladen
+            </a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/mahmad12/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"></path></svg>
+            </a>
+            <a class="icon-btn" href="https://github.com/mahmad-dev" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"></path></svg>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              München · Ilmenau, Deutschland
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              M.Sc. Computer &amp; System Engineering, TU Ilmenau
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"></path></svg>
+              Englisch (C1) · Deutsch (A2)
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="../assets/img/hero-landscape.jpg" width="1290" height="860" alt="Muhammad Ahmad auf dem Eisernen Steg, im Hintergrund die Frankfurter Skyline" fetchpriority="high">
+            <span class="photo-caption">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Frankfurt am Main, Deutschland
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Tech marquee ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>TypeScript</span><span>Node.js</span><span>Next.js</span><span>NestJS</span><span>Next.js</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>GraphQL</span><span>LangChain</span><span>Model Context Protocol</span><span>RAG</span><span>Claude API</span><span>Python</span><span>Golang</span><span>CI/CD</span>
+      <span>TypeScript</span><span>Node.js</span><span>Next.js</span><span>NestJS</span><span>Next.js</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>GraphQL</span><span>LangChain</span><span>Model Context Protocol</span><span>RAG</span><span>Claude API</span><span>Python</span><span>Golang</span><span>CI/CD</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== About + impact ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <div class="stats-grid reveal" style="margin-bottom:72px">
+          <div class="stat">
+            <div class="stat-num"><span data-count="40" data-suffix="M+">40M+</span></div>
+            <p class="stat-label"><b>Monatliche Nutzer</b>, die von Backends bedient werden, die ich bei DubizzleLabs gebaut und betrieben habe</p>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="85" data-suffix="%">85%</span></div>
+            <p class="stat-label"><b>Weniger PR-Vorbereitungszeit</b>, von 40 auf 6 Minuten, durch die agentische Delivery-Pipeline</p>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="45" data-suffix="%">45%</span></div>
+            <p class="stat-label"><b>Geringere Query-Latenz</b> durch Schema- und Index-Arbeit in MySQL/PostgreSQL</p>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="5000" data-suffix="+">5000+</span></div>
+            <p class="stat-label"><b>Aktive Kunden</b> in der durchgängigen Hypotheken-Funktion, die ich ausgeliefert habe</p>
+          </div>
+        </div>
+
+        <div class="section-head reveal">
+          <span class="eyebrow">Über mich</span>
+          <h2>Systeme, die halten, und die KI-Schicht darüber</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-body reveal">
+            <p>
+              Drei Jahre lang habe ich bei <strong>DubizzleLabs</strong> an den Systemen hinter Zameen.com, Bayut.sa und Propforce gearbeitet:
+              verteilte Node.js/TypeScript-Services, transaktionale Daten in echtem Volumen und die unspektakuläre Arbeit, die sie
+              schnell hält (Query-Pläne, Indizes, Background Worker, Observability, RBAC).
+            </p>
+            <p>
+              Danach habe ich die Schicht darüber gebaut. <strong>AVA</strong>, einen internen KI-Copiloten, der eine Anfrage im Chat bis zum
+              geprüften Pull Request bringt. <strong>MCP-Server</strong>, die LLM-Agenten typisierten Zugriff auf interne APIs geben, statt dass
+              Entwickler sich durch Dokumentation graben. Eine <strong>RAG-Wissensdatenbank</strong> über Architekturentscheidungen, die in normaler Sprache antwortet.
+              Nichts davon war eine Demo. Kolleginnen und Kollegen haben es täglich genutzt.
+            </p>
+            <p>
+              Zurzeit mache ich einen <strong>M.Sc. in Computer &amp; System Engineering an der TU Ilmenau</strong> und erforsche eine
+              Datenintegritätsschicht für LangChain-QnA-Systeme: blockchain-verankerte Fingerprints, die zur Inferenzzeit erneut geprüft werden,
+              damit ein vergifteter Korpus nicht unbemerkt für einen antwortet.
+            </p>
+            <p>
+              Seit August bin ich <strong>Forward Deployed Engineer im Venture Lab der UnternehmerTUM</strong> in München,
+              und das ist die schnellste Variante dieser Arbeit, die ich bisher gemacht habe. Ich komme in ein Produktteam, und die Aufgabe ist, in
+              wenigen Tagen etwas Nutzbares herauszubringen: eine Anwendung zur Validierung von KI-Anwendungsfällen in Ventures, Werkzeuge zur Prüfung gegen
+              KI-Richtlinien und Kriterien des EU AI Act, interne Anwendungen, die verstreute Prozesse an einem Ort bündeln.
+            </p>
+            <p>
+              Der rote Faden ist einfach genug. Ich will, dass das, was ich baue, im Arbeitsalltag von Menschen landet. Genau darauf
+              ziele ich im Venture Lab und in den Projekten, die ich in meiner freien Zeit baue.
+            </p>
+          </div>
+
+          <aside class="info-card reveal">
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="k">Standort</span><span class="v">München · Ilmenau, DE</span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+              <span class="k">E-Mail</span><span class="v"><a href="mailto:ahmad.arshad7869@gmail.com">ahmad.arshad7869@gmail.com</a></span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+              <span class="k">Telefon</span><span class="v"><a href="tel:+491791647953">+49 179 1647953</a></span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span class="k">Studium</span><span class="v">M.Sc. CSE · TU Ilmenau</span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span class="k">Aktuell</span><span class="v">Werkstudent · UnternehmerTUM Venture Lab</span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span class="k">Arbeitserlaubnis</span><span class="v">Deutsche Aufenthaltserlaubnis zum Studium (§16b) · Blue-Card-berechtigt</span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"></path></svg>
+              <span class="k">Sprachen</span><span class="v">Englisch C1 · Deutsch A2</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Experience ===================== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Erfahrung</span>
+          <h2>Wo ich gebaut habe</h2>
+          <p>Drei Jahre Engineering im Produktivbetrieb, jetzt angewandt in einem Venture Lab, dazu die Lehr- und Community-Arbeit, die dazugehörte.</p>
+        </div>
+
+        <div class="exp-columns">
+          <div class="reveal">
+            <p class="col-title">Beruflich</p>
+            <div class="timeline">
+
+              <article class="tl-item is-current">
+                <p class="tl-period">Aug 2026 – heute · Werkstudent</p>
+                <h3>Forward Deployed Engineer II - Intelligence</h3>
+                <p class="tl-org">UnternehmerTUM · Venture Lab · Munich</p>
+                <ul>
+                  <li>In Produktteams des Venture Lab eingesetzt, um interne Produkte in kurzen Zyklen auszuliefern: von einem Anwendungsfall auf einem Miro-Board bis zu etwas, das man öffnen und benutzen kann.</li>
+                  <li>Eine Anwendung zur <strong>Validierung von KI-Anwendungsfällen</strong> über mehrere Ventures hinweg gebaut, dazu Werkzeuge, die Arbeit gegen <strong>KI-Richtlinien und Kriterien des EU AI Act</strong> prüfen.</li>
+                  <li>Arbeit an internen Anwendungen, die das Tooling für die gesamte Organisation bündeln, sodass verstreute Prozesse an einem Ort zusammenlaufen.</li>
+                  <li>Prototyping von <strong>LLM-Pipelines</strong>, die auch ausgeliefert werden: RAG über interne Korpora, Claude API, Supabase- und Salesforce-Daten, verdrahtet in echte Produkte statt im Notebook liegen gelassen.</li>
+                </ul>
+                <div class="tags">
+                  <span>NestJS</span><span>Node.js</span><span>Next.js</span><span>Python</span><span>Claude API</span><span>RAG</span><span>Supabase</span><span>Salesforce</span>
+                </div>
+              </article>
+
+              <article class="tl-item">
+                <p class="tl-period">Jul 2023 – Jul 2026 · Vollzeit</p>
+                <h3>Senior Software Engineer, Backend</h3>
+                <p class="tl-org">DubizzleLabs · Propforce, Zameen.com, Bayut.sa · 40 Mio.+ MAU</p>
+                <span class="promo-note">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                  Associate Software Engineer (2023) → Software Engineer (2024) → Senior Software Engineer (2026)
+                </span>
+                <ul>
+                  <li><strong>AVA</strong> entworfen und ausgeliefert, einen internen KI-Copiloten und eine autonome Delivery-Pipeline, die über mehrere Dubizzle-Produkte hinweg eingesetzt werden und Business-Teams erlauben, Live-Daten abzufragen und Code durchgängig aus einer Chat-Oberfläche auszuliefern.</li>
+                  <li><strong>Model-Context-Protocol-Server</strong> ausgerollt, die KI-Agenten direkten Zugriff auf interne APIs geben und manuelle Entwickler-Recherchen um rund 30 % senken, dazu eine RAG-Wissensdatenbank für die Suche in Architekturdokumenten in normaler Sprache.</li>
+                  <li>Eine durchgängige <strong>Hypotheken-Funktion gebaut, die über 5.000 aktive Kunden nutzen</strong>, und die Aufgabenverteilung im Team mit KI-Gesprächstranskription, Voice-Agents und Workflow-Automatisierung automatisiert.</li>
+                  <li>RBAC-basiertes Logging, Metriken und Tracing über kritische CRUD-Pfade eingeführt; parallele Cron-Jobs und Background Worker für den Durchsatz ergänzt; <strong>Query-Latenz um 45 % gesenkt</strong> durch Optimierung in MySQL/PostgreSQL.</li>
+                </ul>
+                <div class="tags">
+                  <span>Node.js</span><span>TypeScript</span><span>NestJS</span><span>Next.js</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>AWS</span><span>Claude API</span><span>MCP</span><span>LangChain</span><span>RAG</span>
+                </div>
+              </article>
+
+              <article class="tl-item">
+                <p class="tl-period">Jan 2024 – Jan 2025 · Freiberuflich, Teilzeit</p>
+                <h3>Software Engineer, Backend</h3>
+                <p class="tl-org">Beacon Secure · Security-Tech-Startup aus Großbritannien</p>
+                <ul>
+                  <li>Das gesamte Backend für eine übernommene Produktlinie von Grund auf in NestJS, TypeScript und MongoDB aufgebaut.</li>
+                  <li>Sichere REST-APIs für Mobile- und Web-Clients entworfen und ausgeliefert und damit Muster etabliert, die das ganze Team übernommen hat.</li>
+                </ul>
+                <div class="tags"><span>NestJS</span><span>TypeScript</span><span>MongoDB</span><span>REST APIs</span><span>Architektur</span></div>
+              </article>
+
+              <article class="tl-item">
+                <p class="tl-period">Mär 2021 – Jan 2024 · Teilzeit / Community</p>
+                <h3>Community Lead &amp; Blockchain Developer Lead</h3>
+                <p class="tl-org">Stacks Pakistan · Bitcoin-L2-Ökosystem mit Sitz in New York</p>
+                <ul>
+                  <li>Leitung des Stacks-Entwickler-Chapters in Pakistan: Hackathons, technische Bootcamps, Mentoring.</li>
+                  <li><strong>89 Studierende ausgebildet</strong> in Web3 und Backend-Engineering; <strong>22 davon sind in internationale Software-Rollen gewechselt</strong>.</li>
+                </ul>
+                <div class="tags"><span>Stacks</span><span>Web3</span><span>Smart Contracts</span><span>Mentoring</span></div>
+              </article>
+
+              <article class="tl-item">
+                <p class="tl-period">Jun 2022 – Aug 2022 · Praktikum</p>
+                <h3>Technical Content Engineer (Answers)</h3>
+                <p class="tl-org">Educative.io</p>
+                <ul>
+                  <li>Über 35 technische Beiträge zu Netzwerken, Datenstrukturen und Betriebssystemen verfasst; weitere 40–60 fachlich geprüft.</li>
+                  <li>Drei Best-Answer-Auszeichnungen erhalten; ausgewählte Beiträge wurden der breiteren Community veröffentlicht.</li>
+                </ul>
+                <div class="tags"><span>Technische Dokumentation</span><span>Betriebssysteme</span><span>Datenstrukturen</span></div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p class="col-title">Ausbildung</p>
+            <div class="edu-grid" style="margin-bottom:44px">
+              <div class="edu-card">
+                <p class="tl-period">Mar 2026 – Oct 2028 (expected)</p>
+                <h3>M.Sc. Computer &amp; System Engineering</h3>
+                <p>TU Ilmenau, Deutschland. Forschungsschwerpunkt auf verteilten Systemen, KI-Integration und Datenintegrität für LLM-Pipelines.</p>
+              </div>
+              <div class="edu-card">
+                <p class="tl-period">Aug 2019 – Sep 2023</p>
+                <h3>B.Sc. Informatik</h3>
+                <p>FAST National University of Computer &amp; Emerging Sciences, Pakistan. Dean's Honour Roll (GPA 3,5+); landesweit Platz 7 im NU-Aufnahmetest.</p>
+              </div>
+            </div>
+
+            <p class="col-title">Engagement</p>
+            <div class="edu-grid">
+              <div class="edu-card">
+                <p class="tl-period">Jan 2023 – May 2023</p>
+                <h3>Aspire Leaders Program</h3>
+                <p>Aspire Institute, gegründet an der Harvard University. Ausgewählt für ein Leadership-Programm mit einer internationalen Kohorte.</p>
+              </div>
+              <div class="edu-card">
+                <p class="tl-period">Jun 2022 – Mar 2024</p>
+                <h3>Community Evangelist</h3>
+                <p>Algorand UK. Aufbau regionaler Entwickler-Chapter im Algorand-Ökosystem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Stack ===================== -->
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Stack</span>
+          <h2>Womit ich arbeite</h2>
+          <p>Werkzeuge, die ich im Produktivbetrieb eingesetzt habe, nicht nur in Tutorials.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card featured reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M12 8V4M8 4h8"></path><circle cx="9" cy="14" r="1"></circle><circle cx="15" cy="14" r="1"></circle></svg>
+              <h3>KI- &amp; LLM-Engineering</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Model Context Protocol</span><span class="chip">Agentische Pipelines</span><span class="chip">RAG-Systeme</span><span class="chip">LangChain</span><span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">Vektorsuche</span><span class="chip">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"></rect><rect x="2" y="14" width="20" height="7" rx="2"></rect><line x1="6" y1="6.5" x2="6.01" y2="6.5"></line><line x1="6" y1="17.5" x2="6.01" y2="17.5"></line></svg>
+              <h3>Full-Stack-Entwicklung</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Node.js</span><span class="chip">TypeScript</span><span class="chip">NestJS</span><span class="chip">Express</span><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">MERN</span><span class="chip">REST</span><span class="chip">GraphQL</span><span class="chip">Microservices</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"></path><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"></path></svg>
+              <h3>Daten &amp; Speicher</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Sequelize</span><span class="chip">Query-Optimierung</span><span class="chip">Index-Strategie</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><path d="m3 7 9 5 9-5M12 22V12"></path></svg>
+              <h3>Infrastruktur</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Observability</span><span class="chip">Background Worker</span><span class="chip">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <h3>Sprachen</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">Go</span><span class="chip">C++</span><span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <h3>Arbeitsweise</h3>
+            </div>
+            <div class="chips">
+              <span class="chip">Systemdesign</span><span class="chip">Code-Review</span><span class="chip">RBAC &amp; Auth</span><span class="chip">Testing</span><span class="chip">Agile</span><span class="chip">Technische Dokumentation</span><span class="chip">Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Work ===================== -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ausgewählte Arbeiten</span>
+          <h2>Fallstudien</h2>
+          <p>Systeme, die ich entworfen, gebaut und betrieben habe, jeweils mit dem Problem, der Architektur und dem, was sich danach geändert hat.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Projekte filtern">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Alle</button>
+          <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">KI &amp; Automatisierung</button>
+          <button class="filter-btn" type="button" data-filter="backend" aria-pressed="false">Backend-Systeme</button>
+          <button class="filter-btn" type="button" data-filter="research" aria-pressed="false">Forschung</button>
+          <button class="filter-btn" type="button" data-filter="web3" aria-pressed="false">Blockchain</button>
+          <button class="filter-btn" type="button" data-filter="early" aria-pressed="false">Frühe Arbeiten</button>
+        </div>
+
+        <div class="project-grid reveal">
+
+          <article class="project-card" data-tags="ai backend">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-career-os.svg" alt="Career-OS-Dashboard: eine bewertete nächste Aktion, ein Blue-Card-Urteil und drei Suchpfade" loading="lazy" style="view-transition-name:vt-career-os-img">
+              <span class="project-kind">KI &amp; Automatisierung</span>
+              <span class="project-live">Live</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-career-os-title">Career OS</h3>
+              <p>Eine persönliche Karriere-Konsole, die drei Jobsuchen gleichzeitig steuert (Vollzeit in Deutschland, Elite-/FAANG-Einstieg, EU-geförderte Mobilität), aus einem belegten Profil, mit einem deterministischen Scorer über elf Faktoren und einer KI-Zweitmeinung mit Erfindungsschutz.</p>
+              <p class="project-metric">Drei Suchpfade, ein Profil, eine nächste Aktion pro Tag &middot; 645+ Tests</p>
+              <div class="tags"><span>Next.js 16</span><span>TypeScript</span><span>Drizzle/Postgres</span><span>LLM-Router</span></div>
+              <a class="project-link" href="project-career-os.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="research ai">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-rag-guard.svg" alt="Angriffssimulator, der einen manipulierten Chunk in Echtzeit erkennt, mit einem Benchmark von 100 % Richtig-Positiven und 0 % Falsch-Positiven" loading="lazy" style="view-transition-name:vt-rag-guard-img">
+              <span class="project-kind">Forschung</span>
+              <span class="project-live">Live</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-rag-guard-title">rag-integrity-guard</h3>
+              <p>Eine von Grund auf gebaute Integritätsschicht für Retrieval: Jeder RAG-Chunk bekommt beim Ingest einen Fingerprint und wird zur Abfragezeit erneut geprüft. Ein vergifteter oder manipulierter Chunk wird so erkannt, bevor er das LLM erreicht, statt dem Vektorspeicher blind zu vertrauen.</p>
+              <p class="project-metric">100 % Erkennung / 0 % Fehlalarme in einem öffentlichen Benchmark mit 500 Paaren &middot; 2,73 ms Overhead</p>
+              <div class="tags"><span>Python</span><span>LangChain</span><span>FastAPI</span><span>pytest</span></div>
+              <a class="project-link" href="project-rag-guard.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-ava.svg" alt="AVA: PR-Vorbereitung von 40 auf 6 Minuten reduziert, durchgängig automatisiert" loading="lazy" style="view-transition-name:vt-ava-img">
+              <span class="project-kind">KI &amp; Automatisierung</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-ava-title">AVA: KI-Copilot &amp; Delivery-Pipeline</h3>
+              <p>Ein interner Copilot, der über Dubizzle-Produkte hinweg eingesetzt wird: Aus einer Chat-Anfrage entsteht ein Wireframe, ein Jira-Ticket und ein geprüfter Pull Request, ohne das Gespräch zu verlassen.</p>
+              <p class="project-metric">PR-Vorbereitung 40 Min. → 6 Min. · in mehreren Produktteams im Einsatz</p>
+              <div class="tags"><span>Claude API</span><span>Node.js</span><span>TypeScript</span><span>Jira API</span></div>
+              <a class="project-link" href="project-sdlc.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai backend">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-mcp.svg" alt="MCP-Gateway: rund 30 % weniger manuelle Entwickler-Recherchen" loading="lazy" style="view-transition-name:vt-mcp-img">
+              <span class="project-kind">KI &amp; Automatisierung</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-mcp-title">Model Context Protocol Gateway</h3>
+              <p>MCP-Server, die interne APIs LLM-Agenten als typisierte, berechtigungsgeprüfte Tools bereitstellen, sodass Agenten Anfragen direkt lösen, statt dass Entwickler Services durchsuchen.</p>
+              <p class="project-metric">~30 % weniger manuelle Entwickler-Recherchen</p>
+              <div class="tags"><span>MCP</span><span>TypeScript</span><span>Interne APIs</span><span>RBAC</span></div>
+              <a class="project-link" href="project-mcp.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-rag.svg" alt="Wissens-RAG: kein einziger Senior-Entwickler mehr nötig, um Onboarding-Fragen zu beantworten" loading="lazy" style="view-transition-name:vt-rag-img">
+              <span class="project-kind">KI &amp; Automatisierung</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-rag-title">RAG Knowledge Base</h3>
+              <p>Retrieval über interne Dokumentation, Engineering-Richtlinien und Architekturentscheidungen, sodass jede Person in normaler Sprache fragen kann, warum etwas so gebaut ist, und eine belegte Antwort bekommt.</p>
+              <p class="project-metric">Onboarding-Fragen beantwortet, ohne Senior-Entwickler zu binden</p>
+              <div class="tags"><span>LangChain</span><span>Vektorsuche</span><span>Embeddings</span><span>Node.js</span></div>
+              <a class="project-link" href="project-rag.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="research ai web3">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-data-integrity.svg" alt="M.Sc.-Forschung an der TU Ilmenau: Blockchain-verankerte Fingerprints über einem RAG-Korpus" loading="lazy" style="view-transition-name:vt-data-integrity-img">
+              <span class="project-kind">Forschung</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-data-integrity-title">Datenintegritäts-Layer für LangChain-QnA</h3>
+              <p>Blockchain-verankerte Fingerprints über einem Retrieval-Korpus, zur Inferenzzeit erneut geprüft, sodass Manipulationen an Quelldokumenten erkannt werden, bevor eine vergiftete Antwort den Nutzer erreicht.</p>
+              <p class="project-metric">M.Sc.-Forschung an der TU Ilmenau · Paper in Arbeit</p>
+              <div class="tags"><span>LangChain</span><span>Merkle-Beweise</span><span>Python</span><span>Smart Contracts</span></div>
+              <a class="project-link" href="project-research.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="backend">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-crm.svg" alt="Propforce-Admin-Dashboard: 40 Mio.+ monatliche Nutzer, 45 % geringere Query-Latenz, 5.000+ Hypothekenkunden" loading="lazy" style="view-transition-name:vt-crm-img">
+              <span class="project-kind">Backend-Systeme</span>
+            </div>
+            <div class="project-body">
+              <h3 style="view-transition-name:vt-crm-title">High-Scale Property CRM Engine</h3>
+              <p>Das Produktiv-Backend hinter Propforce, Zameen.com und Bayut.sa: transaktionale Services, Background Worker und ein durchgängiger Hypothekenprozess im Volumen eines Immobilienmarktplatzes.</p>
+              <p class="project-metric">40 Mio.+ monatliche Nutzer · 45 % geringere Query-Latenz · 5.000+ Hypothekenkunden</p>
+              <div class="tags"><span>NestJS</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>AWS</span></div>
+              <a class="project-link" href="project-crm.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="web3">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-1.jpg" alt="Oberfläche des dezentralen Aktensystems" loading="lazy">
+              <span class="project-kind">Blockchain</span>
+            </div>
+            <div class="project-body">
+              <h3>Decentralized Property Records Platform</h3>
+              <p>Smart Contracts und ein Web-Client mit unveränderlichen Audit-Logs und On-Chain-Dateiprüfung für Akten des öffentlichen Sektors, die nicht unbemerkt verändert werden dürfen.</p>
+              <p class="project-metric">Abschlussarbeit · Leitung eines Teams von 3 Entwicklern</p>
+              <div class="tags"><span>Solidity</span><span>MERN</span><span>IPFS</span><span>Web3.js</span></div>
+              <a class="project-link" href="portfolio-details.html">
+                Fallstudie lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="early">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-2.jpg" alt="Social-Mantra-Webanwendung" loading="lazy">
+              <span class="project-kind">Frühe Arbeiten</span>
+            </div>
+            <div class="project-body">
+              <h3>Social Mantra: Social Web App</h3>
+              <p>Eine Social-Plattform im MERN-Stack mit JWT-Authentifizierung, Direktnachrichten und einem optimierten Query-Pfad für den Feed.</p>
+              <div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
+              <a class="project-link" href="https://github.com/mahmad-dev/Social-Mantra" target="_blank" rel="noopener">
+                Auf GitHub ansehen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="early">
+            <div class="project-thumb">
+              <img src="../assets/img/portfolio/portfolio-3.jpg" alt="Demo zur Maskenerkennung in Echtzeit" loading="lazy">
+              <span class="project-kind">Frühe Arbeiten</span>
+            </div>
+            <div class="project-body">
+              <h3>Real-Time Face Mask Detection</h3>
+              <p>Ein Computer-Vision-Modell auf Live-Webcam-Streams mit OpenCV und Keras, abgestimmt auf Echtzeit-Inferenz auf handelsüblicher Hardware.</p>
+              <div class="tags"><span>Python</span><span>OpenCV</span><span>Keras</span><span>CNN</span></div>
+              <a class="project-link" href="https://github.com/mahmad-dev/Real-Time-Face-Mask-Detection-" target="_blank" rel="noopener">
+                Auf GitHub ansehen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Recommendations ===================== -->
+    <section id="recommendations" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Referenzen</span>
+          <h2>Was Kolleg:innen sagen</h2>
+          <p>Von Vorgesetzten und Tech-Leads, mit denen ich direkt gearbeitet habe.</p>
+        </div>
+
+        <div class="quote-grid reveal">
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p>Ahmad war im Sommer 2022 Praktikant bei Educative Answers. Er hat über 30 Artikel geschrieben und 40–60 Beiträge anderer Praktikanten geprüft. Wenn ich einen Praktikanten mit herausragender Arbeitsmoral nennen müsste, wäre es Muhammad Ahmad. Über das gesamte Praktikum hinweg war er äußerst fleißig, sprachlich stark und detailgenau.</p>
+            <figcaption class="quote-author">
+              <img src="../assets/img/testimonials/testimonials-1.jpg" alt="" loading="lazy">
+              <div><h4>Celeste Salopek</h4><span>Answers Program Manager, Educative Inc.</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p>Ahmad ist ein freundlicher und kluger Mensch, mit dem ich gern zusammengearbeitet habe. Ich hatte das Glück, sein Tech Lead zu sein. Ich schätze, wie präzise und gründlich seine Arbeit ist. Für seinen weiteren Weg wünsche ich ihm alles Gute.</p>
+            <figcaption class="quote-author">
+              <img src="../assets/img/testimonials/testimonials-2.jpg" alt="" loading="lazy">
+              <div><h4>Adeel Qayyum</h4><span>Team Lead &amp; Sr. Technical Content Engineer, Educative Inc.</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p>Die Arbeit mit ihm macht Freude, weil er mit seiner positiven Art ein gutes Umfeld schafft. Ich hatte das Glück, einige seiner Arbeiten zu prüfen, und mir gefällt, wie detailliert und tiefgehend sie sind. Einige seiner Beiträge waren so gut, dass ich das Community-Team eigens gebeten habe, sie öffentlich zu teilen.</p>
+            <figcaption class="quote-author">
+              <img src="../assets/img/testimonials/testimonials-3.jpg" alt="" loading="lazy">
+              <div><h4>Talha Irfan</h4><span>Team Lead · ICLR/ICML/NeurIPS 2023</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p>Ahmad ist ein sehr talentierter Mensch. Er lernt schnell und ist immer bereit, sich einzubringen. Seine Begeisterung für Neues ist bewundernswert. Die Zusammenarbeit mit ihm ist stets eine Freude.</p>
+            <figcaption class="quote-author">
+              <img src="../assets/img/testimonials/testimonials-4.jpg" alt="" loading="lazy">
+              <div><h4>Usama Naeem</h4><span>Software Engineer, Strategic Systems International</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p>Ahmad hat eine große Leidenschaft dafür, über den Tellerrand hinaus zu lernen!</p>
+            <figcaption class="quote-author">
+              <img src="../assets/img/testimonials/testimonials-5.jpg" alt="" loading="lazy">
+              <div><h4>Nabeel Qadeer</h4><span>Coach · Unternehmer · Content Producer</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <span class="eyebrow">Kontakt</span>
+            <h2>Sie suchen einen Full-Stack- oder KI-Engineer, der sofort anfangen kann?</h2>
+            <p>
+              Ich bin für <strong>Vollzeit</strong>-Positionen
+              in Deutschland oder remote verfügbar. Am schnellsten erreichen Sie mich per E-Mail. Ich antworte noch am selben Tag.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:ahmad.arshad7869@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+                Schreiben Sie mir
+              </a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/mahmad12/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"></path></svg>
+                Connect on LinkedIn
+              </a>
+              <a class="btn btn-ghost" href="../assets/Muhammad_Ahmad_Resume.pdf" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Lebenslauf herunterladen
+              </a>
+            </div>
+          </div>
+
+          <div class="info-card contact-list">
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+              <span class="v"><a href="mailto:ahmad.arshad7869@gmail.com">ahmad.arshad7869@gmail.com</a></span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+              <span class="v"><a href="tel:+491791647953">+49 179 1647953</a></span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="v">München · Ilmenau, Deutschland</span>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span class="v"><a href="https://calendly.com/mahmad12" target="_blank" rel="noopener">30-minütigen Termin buchen</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Muhammad Ahmad · Full-Stack Engineer &amp; KI-Systeme · Ilmenau, Deutschland</p>
+      <div class="footer-links">
+        <a class="icon-btn" href="https://www.linkedin.com/in/mahmad12/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"></path></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/mahmad-dev" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"></path></svg>
+        </a>
+        <a class="icon-btn" href="mailto:ahmad.arshad7869@gmail.com" aria-label="E-Mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="icon-btn to-top" href="#" aria-label="Nach oben">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </a>
+
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/twin-widget.js" defer></script>
+</body>
+
+</html>
